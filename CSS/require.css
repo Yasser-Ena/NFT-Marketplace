@@ -1,0 +1,427 @@
+/*=========================================*\
+              #CUSTOM PROPERTYS
+\*=========================================*/
+:root{
+    
+ /*==Colors==*/
+
+    /*-Background-*/
+    --Primary-background:   #2B2B2B;
+    --Secondary-background: #3B3B3B;
+    --Action-timer-bg: rgba(59, 59, 59, 0.5);
+
+    /*-Tex-*/
+    --Text:                 #ffffff;
+    --Coption-and-Label-text: #858584;
+
+    /*-Buttons-*/
+    --Call-to-action:         #A259FF;
+
+    /*-NFT Highlight background-*/
+    --Liner-gradient: linear-gradient(180deg, rgba(162, 89, 255, 0) 0%, #A259FF 100%);
+
+
+/*==Typograpgy==*/
+
+    /*-Font family-*/
+    --Primary: 'Work Sans', sans-serif;
+    --Accesent: 'Space Mono', sans-serif;
+
+    /*-Size-*/
+    --h1-fs:                .9rem;
+    --Primary-header-fs:    1.75rem;
+    --Secondary-header-fs: 1.375rem;
+    --Leading-fs:              1rem;
+    --Accesent-fs:          0.75rem;
+    
+    
+    /*-Weight-*/
+    --Primary-header-fw:     600;
+    --Secondary-header-fw:   700;
+    --Leading-w:            400;
+    
+    /*-Line height-*/
+    --line-height: 140%;
+
+    /* --Primary-header-h:  2.45rem; */
+    /* --Accesent-header-h: 2.85rem; */
+    
+    /* --Primary-leading-h:  1.4rem; */
+    /* --Accesent-leading-h:1.05rem; */
+
+/*==Paddings && Margins==*/
+
+    /*-Padding-*/
+    --Sections-pad: 2.1875rem 1.875rem;
+    --Nav-pad:      .9375rem 1.875rem;
+
+    /*-Margin-*/
+    --margin-buttom-h: 0.625rem;
+}
+
+
+/*=========================================*\
+                    #RESET
+\*=========================================*/
+*, 
+*::after,
+*::before{
+    padding: 0;
+    margin:  0;
+    box-sizing: border-box;
+}
+
+li{
+    list-style: none;
+    color: inherit;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+button,
+input{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+
+/*=========================================*\
+                 #BASE STYLE
+\*=========================================*/
+body{
+    background-color: var(--Primary-background);
+    color: var(--Text);
+    overflow: hidden;
+    min-height: 300vh;
+    font-family: var(--Primary);
+}
+
+/*--loaded--*/
+.loaded{overflow: visible;}
+
+::-webkit-scrollbar{width: 2rem;}
+
+::-webkit-scrollbar-track{
+    background-color: var(--Coption-and-Label-text);
+    box-shadow: inset 0 0 5px var(--Text);
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: var(--Action-timer-bg);
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover{background-color: var(--Call-to-action);}
+
+/*--preloader--*/
+.preloader{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #A259FF;
+    display: grid;
+    place-items: center;
+    z-index: 6;
+}
+
+.preloader.loaded{display: none;}
+
+.preloader-circle{
+    width: 3rem;
+    height: 3rem;
+    border: 6px solid transparent;
+    border-block: 6px solid var(--Text);
+    border-radius: 50%;
+    animation-name: loading;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes loading{
+    from{transform: rotate(0);}
+    to{transform: rotate(1turn);}
+}
+
+/*=========================================*\
+                #TYPOGRAPHY
+\*=========================================*/
+/****Navigation****/
+    /*--logo text--*/
+    h1{
+        font-family:var(--Accesent);
+        font-size: var(--h1-fs);
+        font-weight: var(--Primary-header-fw);
+    }
+
+    /*--nave links--*/
+    .nave li a,
+    .nave .sign-up {
+        font-size: var(--Leading-fs);
+        font-weight: var(--Primary);
+    }
+
+    h2{
+        font-size: var(--Primary-header-fs);
+        font-weight: var(--Primary-header-fw);
+        line-height: var(--line-height);
+    }
+    
+    p{
+        font-size: var(--Leading-fs);
+        font-weight: var(--Leading-w);
+        line-height: var(--line-height);
+    }
+    
+    h3{
+        font-size: var(--Secondary-header-fs);
+        font-weight: var(--Primary-header-fw);
+    }
+
+    /****Hero Section****/
+    /*accesent font family on the additional-info*/
+    .info li h3{
+        font-family: var(--Accesent);
+    }
+
+/*=========================================*\
+                  #REUSED
+\*=========================================*/
+/*****The grid for the sction containers*/
+.grid{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+/****The flex for align a text withe logo****/
+.items-flex{
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+
+
+
+/*=========================================*\
+                 #MOBILE SYLE
+\*=========================================*/
+    /****Navegation****/
+    .navgation{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: var(--Nav-pad);
+        position: relative;
+        /* I want to make translate afect */
+    }
+
+    /*--logo--*/
+    /* logo icone */
+    .logo img{
+        width: 1.5rem;
+        height: 1.5rem;
+        filter: invert(49%) sepia(65%) saturate(5588%) hue-rotate(243deg) brightness(102%) contrast(101%);
+    }
+    
+    /* the liste of links its by default invisible */
+    .nave{display: none;}
+
+    /* syle the menu button */
+    #menu{
+        width: 1.5rem;
+        height: 1.5rem;
+        transition: ease-out .04s;
+    }
+    
+    #menu:hover,
+    #menu:active{
+        filter: invert(49%) sepia(65%) saturate(5588%) hue-rotate(243deg) brightness(102%) contrast(101%);
+    }
+
+    /*--nave from JavaScript--*/
+    .nave.active{
+        display: block;
+        position: absolute;
+        top: 56px;
+        left: 0;
+        width: 100%;
+        background-color: var(--Secondary-background);
+        border-block: 2px solid var(--Text);
+        z-index: 4;
+    }
+    
+    /*--nave links--*/
+    .nave .marketplace,
+    .nave .rankings,
+    .nave .wallet{
+        padding-block: 20px;
+        padding-inline: 34px;
+        border-bottom: 1px solid #858584;
+        transition: ease-in .01ms;
+    }
+
+    .nave .marketplace:hover,
+    .nave .marketplace:active,
+    .nave .rankings:hover,
+    .nave .rankings:active,
+    .nave .wallet:hover,
+    .nave .wallet:active{
+        color: var(--Call-to-action);
+        box-shadow: inset 0 0 5px var(--Text);
+    }
+
+    /*--sign up button*/
+    .nave .sign-up{
+        margin-left: 34px;
+    }
+    
+    .nave .sign-up a{
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        background-color: var(--Call-to-action);
+        width: 50%;
+        padding-block: 8px ;
+        padding-inline: 30px;
+        margin-block: .8rem;
+        border-radius: 20px;
+        transition: color .4s, border .8s, ;
+    }
+
+    .nave .sign-up a:hover,
+    .nave .sign-up a:active{
+        background-color: transparent;
+        border: 1px solid var(--Call-to-action);
+    }
+    
+    .nave.sign-up a:hover img{
+        image-rendering: invert(49%) sepia(65%) saturate(5588%) hue-rotate(243deg) brightness(102%) contrast(101%);
+    }
+    
+
+    .sign-up a img{
+        width: 24px;
+        height: 24px;
+    }
+
+    /****Hero Section****/
+    #hero-section{
+        padding: var(--Sections-pad);
+        grid-template-rows: min(154px) 1fr max(60px) 1fr;
+        row-gap: 40px;
+    }
+
+    /*-discreption-*/
+    .discreption{
+        grid-column: 1/13;
+        grid-row: 1/2;
+    }
+
+    .discreption h2{
+        margin-bottom: var(--margin-buttom-h);
+    }
+
+    /*-highlighted-nft-*/
+    .highlighted-nft{
+        background-color: var(--Secondary-background);
+        grid-column: 1/13;
+        grid-row: 2/3;
+        border-radius: 12px;
+        width: 100%;
+    }
+    
+    .highlighted-nft img {
+        object-fit: contain;
+        object-position: right;
+        
+
+    }
+    
+    .highlighted-nft .info{
+        padding: 22px 20px;
+    }
+
+    .highlighted-nft .info h3{
+        margin: 10px;
+    }
+    /*artist-card*/
+
+    .highlighted-nft .info .artist-card img{
+        width: 24px;
+        height: 24px;
+    }
+
+    /*-get-started-btn-*/
+    .get-started-btn{
+        grid-column:1/13;
+        grid-row: 3/4;
+    }
+
+    .get-started-btn a{
+        background-color: var(--Call-to-action);
+        padding-block: 20px;
+        justify-content: center;
+        border-radius: 20px;
+        transition: ease-in .01ms;
+    }
+
+    .get-started-btn a:hover{
+        background-color: transparent;
+        border: 1px solid var(--Call-to-action);
+
+    }
+
+    .get-started-btn a img{
+        width: 20px;
+        height: 20px;
+    }
+    .get-started-btn a:hover img,
+    .get-started-btn a:active img{ /* it should change the color of the svg icon */
+        image-rendering: invert(49%) sepia(65%) saturate(5588%) hue-rotate(243deg) brightness(102%) contrast(101%);
+        width:50px ;
+        height: 50px;
+    }
+
+
+    /*-additional-info-*/
+    .additional-info{
+        grid-column: 1/12;
+        grid-row: 4/5;
+    }
+
+    .info{
+        display: flex;
+        justify-content: space-between;
+        /* margin-right: 1rem; */
+    }
+/* 
+    .info .total-sale{
+        grid-column: 1/5;
+        grid-row: 1;
+    }
+
+    .info .auctions{
+        grid-column: 5/9;
+        grid-row: 1;
+    }
+
+    .info .artists{
+        grid-column: 9/13;
+        grid-row: 1;
+    } */
+
+/*=========================================*\
+            #SMALL TABLET STYLE
+\*=========================================*/
+
+
+
+/*=========================================*\
+        #LARGE TABLET && LAPTOP STYLE
+\*=========================================*/
