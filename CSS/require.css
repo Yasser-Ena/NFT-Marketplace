@@ -3,173 +3,177 @@
 \*=========================================*/
 :root{
     
- /*==Colors==*/
-
-    /*-Background-*/
-    --Primary-background:   #2B2B2B;
-    --Secondary-background: #3B3B3B;
-    --Action-timer-bg: rgba(59, 59, 59, 0.5);
-
-    /*-Tex-*/
-    --Text:                   #ffffff;
-    --Footer-text:            #CCCCCC;
-    --Coption-and-Label-text: #858584;
-
-    /*-Buttons-*/
-    --Call-to-action:         #A259FF;
-
-    /*-NFT Highlight background-*/
-    --Liner-gradient: linear-gradient(180deg, rgba(162, 89, 255, 0) 0%, #A259FF 100%);
-
-
-/*==Typograpgy==*/
-
-    /*-Font family-*/
-    --Primary: 'Work Sans', sans-serif;
-    --Accesent: 'Space Mono', sans-serif;
-
-    /*-Size-*/
-    --h1-fs:                  .9rem;
-    --Main-header-fs:       1.75rem;
-    --Primary-header-fs:    1.75rem;
-    --Secondary-header-fs: 1.375rem;
-    --Leading-fs:              1rem;
-    --navlinks-fs:             1rem;
-    --Accesent-fs:          0.75rem;
-    
-    
-    /*-Weight-*/
-    --Primary-header-fw:     600;
-    --Secondary-header-fw:   700;
-    --Leading-w:             400;
-    
-    /*-Line height-*/
-    --Mian-heading-line-height: 140%;
-    --line-height:              140%;
-    --Accesent-line-height:     120%;
-
-/*==Paddings && Margins==*/
-
-    /*-Padding-*/
-    --Sections-pad: 2.1875rem 1.875rem;
-    --Nav-pad:      .9375rem 1.875rem;
-
-    /*-Margin-*/
-    --margin-buttom-h: 0.625rem;
-    --margin-of-20:      1.5rem;
-    
-/*==Gap==*/
-    --gap-bottom: 2.5rem;
-    --tending-gap: 0.9375rem;
-    --gap-of-20:  20px;
-    --gap-of-30:  30px;
-
-/*==Border radius==*/
-    --pic-radius: 20px;
-}
-
-
-/*=========================================*\
-                    #RESET
-\*=========================================*/
-*, 
-*::after,
-*::before{
-    padding: 0;
-    margin:  0;
-    box-sizing: border-box;
-}
-
-li{
-    list-style: none;
-    color: inherit;
-}
-
-a{
-    text-decoration: none;
-    color: inherit;
-}
-
-button,
-input{
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-}
-
-img {
-    display: block;
-    max-width: 100%;
-}
-
-
-/*=========================================*\
-                 #BASE STYLE
-\*=========================================*/
-body{
-    background-color: var(--Primary-background);
-    color: var(--Text);
-    overflow: hidden;
-    min-height: 100vh;
-    font-family: var(--Primary);
-}
-
-/*--loaded--*/
-.loaded{overflow: visible;}
-
-::-webkit-scrollbar{width: 1rem;}
-
-::-webkit-scrollbar-track{
-    background-color: var(--Coption-and-Label-text);
-    box-shadow: inset 0 0 5px var(--Text);
-}
-
-::-webkit-scrollbar-thumb{
-    background-color: var(--Action-timer-bg);
-    border-radius: 4px;
-}
-
-::-webkit-scrollbar-thumb:hover{background-color: var(--Call-to-action);}
-
-/*--preloader--*/
-.preloader{
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #A259FF;
-    display: grid;
-    place-items: center;
-    z-index: 6;
-}
-
-.preloader.loaded{display: none;}
-
-.preloader-circle{
-    width: 3rem;
-    height: 3rem;
-    border: 6px solid transparent;
-    border-block: 6px solid var(--Text);
-    border-radius: 50%;
-    animation-name: loading;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-}
-
-@keyframes loading{
-    from{transform: rotate(0);}
-    to{transform: rotate(1turn);}
-}
-
-/*=========================================*\
-                #TYPOGRAPHY
-\*=========================================*/
-/****Navigation****/
+    /*==Colors==*/
+   
+       /*-Background-*/
+       --Primary-background:   #2B2B2B;
+       --Secondary-background: #3B3B3B;
+       --Action-timer-bg: rgba(59, 59, 59, 0.5);
+   
+       /*-Tex-*/
+       --Text:                   #ffffff;
+       --Footer-text:            #CCCCCC;
+       --Coption-and-Label-text: #858584;
+   
+       /*-Buttons-*/
+       --Call-to-action:         #A259FF;
+   
+       /*-NFT Highlight background-*/
+       --Liner-gradient: linear-gradient(180deg, rgba(162, 89, 255, 0) 0%, #A259FF 100%);
+   
+   
+   /*==Typograpgy==*/
+   
+       /*-Font family-*/
+       --Primary: 'Work Sans', sans-serif;
+       --Accesent: 'Space Mono', sans-serif;
+   
+       /*-Size-*/
+       --h1-fs:                     .9rem;
+       --Main-header-fs:          1.75rem;
+       --Primary-header-fs:       1.75rem;
+       --Secondary-header-fs:    1.375rem;
+       --Secondary-header-fs-h4: 1.375rem;
+       --Auction-header:         2.375rem; 
+       --Leading-fs:                 1rem;
+       --avatar-name:                1rem;
+       --navlinks-fs:                1rem;
+       --Accesent-fs:             0.75rem;
+       
+       
+       /*-Weight-*/
+       --Primary-header-fw:     600;
+       --Secondary-header-fw:   700;
+       --Leading-w:             400;
+       
+       /*-Line height-*/
+       --Mian-heading-line-height: 140%;
+       --line-height:              140%;
+       --Accesent-line-height:     120%;
+   
+   /*==Paddings && Margins==*/
+   
+       /*-Padding-*/
+       --Sections-pad: 2.1875rem 1.875rem;
+       --Nav-pad:      .9375rem 1.875rem;
+   
+       /*-Margin-*/
+       --margin-buttom-main-h: 0.625rem; 
+       --margin-buttom-h: 0.625rem;
+       --margin-of-20:      1.5rem;
+       
+   /*==Gap==*/
+       --gap-bottom: 2.5rem;
+       --tending-gap: 0.9375rem;
+       --gap-of-20:  20px;
+       --gap-of-30:  30px;
+   
+   /*==Border radius==*/
+       --pic-radius: 20px;
+   }
+   
+   
+   /*=========================================*\
+                       #RESET
+   \*=========================================*/
+   *, 
+   *::after,
+   *::before{
+       padding: 0;
+       margin:  0;
+       box-sizing: border-box;
+   }
+   
+   li{
+       list-style: none;
+       color: inherit;
+   }
+   
+   a{
+       text-decoration: none;
+       color: inherit;
+   }
+   
+   button,
+   input{
+       -webkit-appearance: none;
+       -moz-appearance: none;
+       appearance: none;
+       background-color: transparent;
+       border: none;
+       cursor: pointer;
+   }
+   
+   img {
+       display: block;
+       max-width: 100%;
+   }
+   
+   
+   /*=========================================*\
+                    #BASE STYLE
+   \*=========================================*/
+   body{
+       background-color: var(--Primary-background);
+       color: var(--Text);
+       overflow: hidden;
+       min-height: 100vh;
+       font-family: var(--Primary);
+   }
+   
+   /*--loaded--*/
+   .loaded{overflow: visible;}
+   
+   ::-webkit-scrollbar{width: 1rem;}
+   
+   ::-webkit-scrollbar-track{
+       background-color: var(--Coption-and-Label-text);
+       box-shadow: inset 0 0 5px var(--Text);
+   }
+   
+   ::-webkit-scrollbar-thumb{
+       background-color: var(--Action-timer-bg);
+       border-radius: 4px;
+   }
+   
+   ::-webkit-scrollbar-thumb:hover{background-color: var(--Call-to-action);}
+   
+   /*--preloader--*/
+   .preloader{
+       position: fixed;
+       top: 0;
+       left: 0;
+       width: 100%;
+       height: 100%;
+       background-color: #A259FF;
+       display: grid;
+       place-items: center;
+       z-index: 6;
+   }
+   
+   .preloader.loaded{display: none;}
+   
+   .preloader-circle{
+       width: 3rem;
+       height: 3rem;
+       border: 6px solid transparent;
+       border-block: 6px solid var(--Text);
+       border-radius: 50%;
+       animation-name: loading;
+       animation-duration: 2s;
+       animation-iteration-count: infinite;
+       animation-timing-function: linear;
+   }
+   
+   @keyframes loading{
+       from{transform: rotate(0);}
+       to{transform: rotate(1turn);}
+   }
+   
+   /*=========================================*\
+                   #TYPOGRAPHY
+   \*=========================================*/
+   /****Navigation****/
     /*--logo text--*/
     h1{
         font-family:var(--Accesent);
@@ -195,9 +199,19 @@ body{
         font-weight: var(--Leading-w);
         line-height: var(--line-height);
     }
+
+    .avatar-name{
+        font-size: var(--avatar-name);
+        font-weight: var(--Leading-w);
+    }
     
     h3{
         font-size: var(--Secondary-header-fs);
+        font-weight: var(--Primary-header-fw);
+    }
+
+    h4{
+        font-size: var(--Secondary-header-fs-h4);
         font-weight: var(--Primary-header-fw);
     }
 
@@ -298,7 +312,7 @@ section{
     .nave.active{
         display: block;
         position: absolute;
-        top: 56px;
+        top: 3.5rem;
         left: 0;
         width: 100%;
         background-color: var(--Secondary-background);
@@ -310,8 +324,8 @@ section{
     .nave .marketplace,
     .nave .rankings,
     .nave .wallet{
-        padding-block: 20px;
-        padding-inline: 34px;
+        padding-block: 1.25em;
+        padding-inline: 2.125em;
         border-bottom: 1px solid #858584;
         transition: ease-in .01ms;
     }
@@ -328,7 +342,7 @@ section{
 
     /*--sign up button*/
     .nave .sign-up{
-        margin-left: 34px;
+        margin-left: 2.125em;
     }
     
     .nave .sign-up a{
@@ -338,10 +352,10 @@ section{
         gap: .75rem;
         background-color: var(--Call-to-action);
         width: 50%;
-        max-width: 9.5rem;
-        padding-block: .5rem;
-        padding-inline: 1.875rem;
-        margin-block: .8rem;
+        max-width: 9.5em;
+        padding-block: .5em;
+        padding-inline: 1.875em;
+        margin-block: .8em;
         border-radius: var(--pic-radius);
         transition: all 300ms ease-out;
     }
@@ -350,16 +364,13 @@ section{
         box-shadow: 0 0 10px rgba(31, 27, 27, 0.829);
         transform: scale(.9);
     }
-    
-    .nave.sign-up a:hover .nave.sign-up a img{
-        filter: invert(49%) sepia(65%) saturate(5588%) hue-rotate(243deg) brightness(102%) contrast(101%);
-    }
-    
 
     .sign-up a img{
         width: 1.25rem;
         aspect-ratio: 1/1;
     }
+
+
 
     /*##################################\
                 #Hero Section
@@ -370,14 +381,15 @@ section{
     }
 
     /*-discreption-*/
-    .headlin{
+    .main-headlin{
         grid-column: 1/13;
         grid-row: 1/2;
     }
 
-    .headlin .main-heading{
+    .main-headlin .main-heading{
         font-size: var(--Main-header-fs);
         line-height: var(--Mian-heading-line-height);
+        margin-bottom: var(--margin-buttom-main-h);
     }
 
     /*-highlighted-nft-*/
@@ -416,7 +428,7 @@ section{
         display: block;
     }
 
-    .highlighted-nft .info h3{
+    .highlighted-nft .info h4{
         margin-bottom: var(--margin-buttom-h);
     }
     /*artist-card*/
@@ -457,14 +469,15 @@ section{
 
     .info{
         display: flex;
-        column-gap: var(--gap-of-30);
-
+        justify-content: space-between;
     }
 
     .info li{
-        padding-right: .875em;
+        padding-right: .875rem;
     }
-    
+
+
+
     /*##################################\
             #Trending Collection
     \##################################*/
@@ -556,7 +569,7 @@ section{
 
     /*add some propertys to collection info*/
 
-    .collection-info  h3{
+    .collection-info  h4{
         margin-bottom: var(--margin-buttom-h);
     }
 
@@ -573,12 +586,12 @@ section{
         display: none;
     }
 
+    
     /*##################################\
             #Top Rated Artists
     \##################################*/
     /* display grid for the */
     #Top-Rated-Artists{
-        grid-template-rows: max(93px) 1fr 66px;
         row-gap: var(--gap-bottom);
     }
     /* style top rated artists header */
@@ -591,16 +604,24 @@ section{
     .artist-card-row{
         grid-column: 1/13;
         grid-row: 2/3;
+        align-self: flex-start;
         grid-template-rows: auto; 
         row-gap: var(--gap-of-20);
     } 
     
     .artist-card-row li{
-        grid-column: 1/13;
         background-color: var(--Secondary-background);
         border-radius: var(--pic-radius);
-        padding: --pad;
+        padding: 1.25rem;
 
+    }
+
+    .ranck1,
+    .ranck2,
+    .ranck3,
+    .ranck4,
+    .ranck5{
+        grid-column: 1/13;
     }
     
     .artist-card-row  a{
@@ -612,8 +633,8 @@ section{
     
     
     .artist-card-row  a div:first-child{
-        width: 60px;
-        height: 60px;
+        width: 3.7rem;
+        aspect-ratio: 1/1;
         position: relative;
     }
 
@@ -629,8 +650,8 @@ section{
     [class ^= image]::before{
         content: "1";
         position: absolute;
-        top: -9px;
-        left: -9px;
+        top: -0.5625rem;
+        left: -0.5625rem;
         background-color: var(--Primary-background);
         width: 1.875rem;
         height: 1.875rem;
@@ -669,7 +690,7 @@ section{
     .artist-card-row .artist-info p span{
         color: var(--Text);
         font-family: var(--Accesent);
-        margin-left: 5px;
+        margin-left: .315rem;
     }
     
     .ranck6,
@@ -687,6 +708,7 @@ section{
     .view-rankings-btn{
         grid-column: 1/13;
         grid-row: 3/4;
+        align-self: flex-end;
         transition: all 300ms ease-out;
     }
     
@@ -699,12 +721,10 @@ section{
     }
 
     .view-rankings-btn img{
-        width: 20px;
-        height: 20px;
+        width: 1.25rem;
+        aspect-ratio: 1/1;
         filter: invert(49%) sepia(65%) saturate(5588%) hue-rotate(243deg) brightness(102%) contrast(101%);
     }
-
-
 
 
     /*##################################\
@@ -729,7 +749,7 @@ section{
     /*--category cards*/
     #browse-categories .category-cards{
         grid-column: 1/13;
-        grid-template-rows: repeat(4, 1fr);
+        grid-template-rows: auto;
         gap: var(--gap-of-20);
     }
     /* give each categorie a background-color */
@@ -749,7 +769,7 @@ section{
     [class ^= pic-container]{
         width: 100%;
         height: 70%;
-        border-radius: 20px 20px 0 0;
+        border-radius: 1.25rem 1.25rem 0 0;
         display:flex;
         justify-content: center;
         align-items: center;
@@ -816,7 +836,7 @@ section{
         background-color: inherit;
         width: 100%;
         height: 100%;
-        border-radius: 20px 20px 0 0 ;
+        border-radius: 1.25rem 1.25rem 0 0 ;
         display:flex;
         justify-content: center;
         align-items: center;
@@ -826,13 +846,13 @@ section{
 
     /* size the icone */
     .pic-card img{
-        min-width: 80px;
+        min-width: 5rem;
         aspect-ratio: 1/1;
-        margin: 31px 35px;
+        margin: 1.9375rem 2.1875rem;
     }
     /* style the category text */
     .category{
-        padding: 20px 20px 25px 20px;
+        padding: 1.25rem 1.25rem 1.5625rem 1.25rem;
     }
 
     .category p{
@@ -886,7 +906,7 @@ section{
     \##################################*/
     /* specifying the number of rows and the gape */
     #discover-more-NFTs{
-        grid-template-rows: min(71px) 1fr 60px;
+        grid-template-rows: auto;
         row-gap: var(--gap-bottom);
     }
 
@@ -899,14 +919,13 @@ section{
     .frame{
         grid-column: 1/13;
         grid-row: 2/3;
-        grid-template-rows: 1fr 1fr 1fr;
         gap: var(--gap-of-20);
     }
 
     /* give the background to li and style the cards */
     .frame li{
         background-color: var(--Secondary-background);
-        border-radius: 20px;
+        border-radius: var(--pic-radius);
         transition: all .06ms ease-out;
     }
     
@@ -921,7 +940,7 @@ section{
     .frame .nft-img-container{
         overflow: hidden;
         aspect-ratio: 4/3;
-        border-radius: 20px 20px 0 0;
+        border-radius: 1.25rem 1.25rem 0 0;
     }
     
     .frame .nft-img-container img{
@@ -933,11 +952,11 @@ section{
 
     /*=style the second parte of the card=*/
     .discover-nft-info{
-        padding: 20px 20px 25px 20px;
+        padding: 1.25rem 1.25rem 1.5625rem 1.25rem;
     }
 
     .discover-nft-info .collection-info{
-        margin-bottom: 25px;
+        margin-bottom: 1.5625rem;
     }
 
     .discover-nft-info .additional-info{
@@ -948,6 +967,7 @@ section{
 
     .additional-info p{
         font-family: var(--Accesent);
+        font-size: var(--Accesent-fs);
         color: var(--Coption-and-Label-text);
     }
 
@@ -993,17 +1013,17 @@ section{
     }
 
     .see-all-btn a img{
-        width: 20px;
-        height: 20px;
+        width: 1.25rem;
+        aspect-ratio: 1/1;
         filter: invert(49%) sepia(65%) saturate(5588%) hue-rotate(243deg) brightness(102%) contrast(101%);
     }
+
 
     /*##################################\
             #NFT in auction
     \##################################*/
     #nft-in-auction{/*give this section a background image width linear gradient on top of the image */
-        grid-template-rows: 120px 44px 92px 1fr 60px;
-        row-gap: var(--gap-of-30);
+        gap: var(--gap-of-30);
         background-image:linear-gradient(180deg, #a259ff00 0%, #A259FF 100%), 
         url(../assets/Screen=Mobile.png);
         background-size: cover;
@@ -1014,13 +1034,13 @@ section{
     /* style the artist card */
     #nft-in-auction .artist-card{
         grid-column: 1/13;
-        grid-row: 2/3;
+        grid-row: 4/5;
         background-color:var(--Secondary-background);
-        padding: 10px 20px;
+        padding: .625rem 1.25rem;
         display: flex;
-        column-gap: 12px;
-        max-width: 151px;
-        max-height: 44px;
+        column-gap: .75rem;
+        max-width: 9.4375rem;
+        max-height: 2.75rem;
         border-radius: var(--pic-radius);
         transition: all .06ms ease-out;
     }
@@ -1032,28 +1052,29 @@ section{
     }
 
     #nft-in-auction .artist-card img{
-        width: 24px;
+        width: 1.5rem;
         aspect-ratio: 1/1;
     }
 
     /* position the headlin */
     #nft-in-auction .headlin{
         grid-column: 1/13;
-        grid-row: 3/4;
+        grid-row: 5/6;
     }
 
     /* remove the margin from the bottom of h2 headlin */
     #nft-in-auction .headlin h2{
+        font-size: var(--Auction-header);
+        line-height: var(--Accesent-line-height);
         margin-bottom: 0;
-        line-height: var(--Accesent);
     }
 
     /* style the auction timer */
     #nft-in-auction .auction-timer{
         grid-column: 1/13;
-        grid-row: 4/5;
+        grid-row: 6/7;
         background-color: var(--Action-timer-bg);
-        padding: 30px;
+        padding: 1.875rem;
         border-radius: var(--pic-radius);
         -webkit-backdrop-filter: blur(6px);
         backdrop-filter: blur(6px);
@@ -1087,7 +1108,7 @@ section{
 
     #nft-in-auction .see-nft-btn{
         grid-column: 1/13;
-        grid-row: 5/6;
+        grid-row: 7/8;
     }
     
     .see-nft-btn a{
@@ -1103,8 +1124,8 @@ section{
     }
 
     .see-nft-btn a img{
-        width: 20px;
-        height: 20px;
+        width: 1.25rem;
+        aspect-ratio: 1/1;
         filter: invert(49%) sepia(65%) saturate(5588%) hue-rotate(243deg) brightness(102%) contrast(101%);
     }
 
@@ -1118,7 +1139,7 @@ section{
                 #How it works
     \##################################*/
     #How-it-works{
-        grid-template-rows: min(71) 1fr;
+        grid-template-rows: minmax(71px 91px) 1fr;
         row-gap: var(--gap-bottom);
     }
 
@@ -1128,7 +1149,7 @@ section{
         grid-row: 2/3;
         /* for giving the list of stops specific
          number of rows be cause its als a grid container */
-        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-rows: auto;
         gap: var(--gap-of-20);
     }
      
@@ -1140,12 +1161,12 @@ section{
         display: flex;
         justify-content: space-between;
         align-items: center;
-        column-gap: 20px;
+        column-gap: var(--gap-of-20);
     }
 
     /* size the icons */
     .steps-list li img{
-        min-width: 100px;
+        min-width: 6.25rem;
         aspect-ratio: 1/1;
     }
 
@@ -1159,8 +1180,8 @@ section{
 
     li .step-description p{
         font-size: var(--Accesent-fs);
-        line-height: var(--line-height);
-        min-width: 155px;
+        line-height: 140%;
+        min-width: 9.6875rem;
     }
 
     .steps-list li:nth-child(1){
@@ -1179,13 +1200,12 @@ section{
     }
 
 
-    /*##################################\
+     /*##################################\
              #Subscribe widget
     \##################################*/
     /* add specific rows to the grid */
-    #Subscribe-widget{
-        grid-template-rows: 1fr min(132px) minmax(108px 200px);
-        row-gap: 40px;
+    .widget-wrapper{
+        row-gap: var(--gap-bottom);
         position: relative;
     }
 
@@ -1231,17 +1251,19 @@ section{
     
     #email::placeholder{
         color: var(--Primary-background);
+        font-size: 1rem;
     }
     
     #email:focus{
         outline: none;
-        border: 2px solid var(--Call-to-action);
+        border: 1px solid var(--Call-to-action);
     }
     
     /* styling the subscribe button */
     #subscribe-btn{
         justify-content: center;
         background-color: var(--Call-to-action);
+        /* border: none; */
         padding: .75rem;
         margin-top: 1rem;
         transition: all 200ms ease-out;
@@ -1263,7 +1285,7 @@ section{
     }
 
     #subscribe-btn img{
-        width: 20px;
+        width: 1.25rem;
         aspect-ratio: 1/1;
     }
 
@@ -1300,9 +1322,9 @@ section{
 
     .alert #close{
         position: absolute;
-        top: 14px;
-        right: 14px;
-        width: 24px;
+        top: .875rem;
+        right: .875rem;
+        width: 1.5rem;
         border-radius: 50%;
         transition: all .1ms ease ease-out;
     }
@@ -1317,15 +1339,12 @@ section{
         aspect-ratio: 1/1;
     }
 
-
-    
     /*##################################\
                     #Footer
     \##################################*/
     #footer-info{
         padding: var(--Sections-pad);
         background-color: var(--Secondary-background);
-        grid-row: 1fr 1fr 1fr 1fr;
         row-gap: var(--gap-bottom);
     }
     /* Positioning the headling and style them */
@@ -1359,6 +1378,10 @@ section{
         word-spacing: -1px;
     }
 
+    .additional-info p{
+        font-size: var(--avatar-name);
+    }
+
     .additional-info .cummunity p{
         margin-bottom: .9375rem;
     }
@@ -1386,14 +1409,14 @@ section{
         grid-row: 2/3;
     }
 
-    .Explore h3{
+    .Explore h4{
         font-family: var(--Accesent);
         font-weight: var(--Secondary-header-fw);
         margin-bottom: var(--gap-of-20);
     }
 
     .Explore .pages li{
-        font-size: var(--Leading-fs);
+        font-size: var(--avatar-name);
         font-weight: var(--Leading-w);
         color: var(--Footer-text)
     }
@@ -1413,7 +1436,7 @@ section{
         grid-row: 3/4;
     }
 
-    .subscribe .headlin h3{
+    .subscribe .headlin h4{
         font-family: var(--Accesent);
         font-weight: var(--Secondary-header-fw);
         margin-bottom: var(--gap-of-20);
@@ -1437,67 +1460,56 @@ section{
     }
 
 
-/*=========================================*\
-                #SMALL TABLET STYLE
-\*=========================================*/
 
 
 
-/*=========================================*\
+
+ /*=========================================*\
         #LARGE TABLET && LAPTOP STYLE
 \*=========================================*/
 @media screen and (min-width: 52.125rem){
     :root{
-       /*==Typograpgy==*/
+        /*==Typograpgy==*/
 
            /*-Size-*/
            --Main-header-fs:       2.375rem;
 
-           /*-Line height-*/
-            --Mian-heading-line-height: 120%;
-            --line-height: 140%;
-            --Accesent-line-height: 120%;
-       
-       /*==Paddings && Margins==*/
+          /*-Line height-*/
+          --Mian-heading-line-height: 120%;
+
+        /*==Paddings && Margins==*/
        
            /*-Padding-*/
            --Sections-pad: 5rem 4.5rem;
            --Nav-pad:      .9375em 3.125rem;
-       
-           /*-Margin-*/
-           /* --margin-buttom-h: 0.625rem; */
-           
-       /*==Gap==*/
-           --gap-bottom: 2.5rem;
-           --tending-gap: 0.9375rem;
-           --gap-of-20:  20px;
-           --gap-of-30:  30px;
-       
-       /*==Border radius==*/
-           --pic-radius: 1.25rem;
-       }
+
+           /*-Margin*/
+           --margin-buttom-main-h : 1.25rem;
 
 
-    /*##################################\
+    }
+
+     /*##################################\
                 #Hero Section
     \##################################*/
-
     #hero-section{
-        grid-template-rows: 1fr 60px minmax(57px 77px);
+        grid-template-rows: min(154px) 1fr max(60px) minmax(57px 77px);
         column-gap: var(--gap-of-30);
         row-gap: var(--gap-of-20);
     }
 
     /*-discreption-*/
-    #hero-section .headlin{
+    .main-headlin{
         grid-column: 1/7;
         grid-row: 1/2;
     }
 
-    /* #hero-section .headlin p{
-        width: 20ch;
-        max-width: 50ch;
-    } */
+    .main-headlin .main-heading{
+        font-size: var(--Main-header-fs);
+        line-height: var(--Mian-heading-line-height);
+        margin-bottom: var(--margin-buttom-main-h);
+    }
+
     /*-highlighted-nft-*/
     .highlighted-nft{
         width: 100%;
@@ -1523,10 +1535,6 @@ section{
         display: block;
     }
 
-    .highlighted-nft .info h3{
-        margin-bottom: 10px;
-    }
-
     /*-get-started-btn-*/
     .get-started-btn{
         grid-column:1/7;
@@ -1547,7 +1555,8 @@ section{
     }
 
 
-    /*##################################\
+
+     /*##################################\
             #Trending Collection
     \##################################*/
         /* style the sliders */
@@ -1595,18 +1604,369 @@ section{
         
         }
 
-        /* postion the the second slider */
+        /* postion the the second slider and display them */
         #second-slider{
             display: block;
             grid-column: 7/13;
             grid-row: 1;
         }
+    
+
+    /*##################################\
+            #Top Rated Artists
+    \##################################*/
+    /* display grid for the */
+    #Top-Rated-Artists{
+        gap: var(--gap-bottom);
+    }
+    /* style top rated artists header */
+    .headlin-section{
+        grid-column: 1/7;
+        grid-row: 1/2;
+    }
+
+    
+    /* style view rankings button */
+    
+    .view-rankings-btn{
+        grid-column: 7/13;
+        grid-row: 1/2;
+        align-self: flex-end;
+        justify-self: end;
+    }
+
+    .view-rankings-btn a{
+        padding: 1.1875rem 1.75rem;
+    }
+    /* style top rated artist main  */
+    .artist-card-row{
+        grid-column: 1/13;
+        grid-row: 2/3;
+        margin-bottom: 0;
+        grid-template-rows: 1fr 1fr 1fr; 
+        gap: var(--gap-of-20);
+    } 
+    
+    /* reposition the first three ranks on the left side */
+    .ranck1,
+    .ranck2,
+    .ranck3{
+        grid-column: 1/7;
+    }
+
+    .ranck1{
+        grid-row: 1/2;
+    }
+
+    .ranck2{
+        grid-row: 2/3;
+    }
+
+    .ranck3{
+        grid-row: 3/4;
+    }
+
+    /* display the sixth ranck */
+    .ranck6{
+        display: block;
+        grid-row: 3/4;
+    }
+    
+    /* reposition the first three ranks on the right side */
+    .ranck4,
+    .ranck5,
+    .ranck6{
+        grid-column: 7/13;
+        grid-row: auto;
+    }
+    .ranck4{
+        grid-row: 1/2;
+    }
+
+    .ranck5{
+        grid-row: 2/3;
+    }
+    /* set the content of the ranck to 6 */
+
+    .artist-card-row  a .image6::before{
+        content: "6";
+    }
 
 
-          
+    /*##################################\
+            #Browse Categories
+    \##################################*/
+
+    /* position each category on her position */
+    /* first row */
+    .category-cards .card-1{
+        grid-column: 1/4;
+        grid-row: 1/2;
+    }
+
+    .category-cards .card-2{
+        grid-column: 4/7;
+        grid-row: 1/2;
+    }
+
+    .category-cards .card-3{
+        grid-column: 7/10;
+        grid-row: 1/2;
+    }
+
+    .category-cards .card-4{
+        grid-column: 10/13;
+        grid-row: 1/2;
+    }
+     
+    /* second row */
+   .category-cards .card-5{
+        grid-column: 1/4;
+        grid-row: 2/3;
+    }
+
+    .category-cards .card-6{
+        grid-column: 4/7;
+        grid-row: 2/3;
+    }
+
+    .category-cards .card-7{
+        grid-column: 7/10;
+        grid-row: 2/3;
+    }
+
+    .category-cards .card-8{
+        grid-column: 10/13;
+        grid-row: 2/3;
+    }
+
+    /*##################################\
+            #Discover more NFTs
+    \##################################*/
+    /* specifying the number of rows and the gape */
+    #discover-more-Nfts{
+        grid-template-rows: auto;
+        row-gap: var(--gap-bottom);
+    }
+
+    /* position the headlin */
+    #discover-more-NFTs .headlin{
+        grid-column: 1/7;
+        grid-row: 1/2;
+    }
+    
+    .see-all-btn{
+        grid-column: 7/13;
+        grid-row: 1/2;
+        align-self: flex-end;
+        justify-self: end;
+    }
+
+    .see-all-btn a{
+        padding: 1.1875rem 1.75rem;
+    }
+
+    /* position ul */
+    .frame{
+        grid-column: 1/13;
+        grid-row: 2/3;
+        gap: var(--gap-of-20);
+    }
+
+     /* position the first card */
+     .frame li:nth-child(1){
+        grid-column: 1/7;
+        grid-row: 1/2;
+    }
+
+    /* position the second card */
+    .frame li:nth-child(2){
+        grid-column: 7/13;
+        grid-row: 1/2;
+    }
+    /* position also the third card or the laste */
+    .frame li:nth-child(3){
+        display: none;
+    }
+    
+    /*=style the first part of the card=*/
+    /* show the specific parte of the image */
+    .frame .nft-img-container{
+        overflow: hidden;
+        aspect-ratio: 4/3.4;
+        border-radius: 1.25rem 1.25rem 0 0;
+    }
+    
+    /* increas the span font size */
+    .additional-info p span{
+        font-size: 1rem;
+    }
+
+    /*##################################\
+            #Discover more NFTs
+    \##################################*/
+    #nft-in-auction{/*give this section a background image width linear gradient on top of the image */
+        grid-template-rows: 360px 1fr 1fr 1fr;
+        row-gap: var(--gap-of-30);
+        column-gap: 0;
+    }
+    /* style the artist card */
+    #nft-in-auction .artist-card{
+        grid-column: 1/13;
+        grid-row: 2/3;
+    }
+
+    /* position the headlin */
+    #nft-in-auction .headlin{
+        grid-column: 1/8;
+        grid-row: 3/4;
+    }
+    
+    /* position the see nft link */
+    #nft-in-auction .see-nft-btn{
+        grid-column: 1/7;
+        grid-row: 4/5;
+        justify-self: start;
+    }
+    
+    #nft-in-auction .see-nft-btn a{
+        padding: 1.1875rem 3.125rem;
+    }
+
+    /* position the auction timer */
+    #nft-in-auction .auction-timer{
+        grid-column: 8/13;
+        grid-row: 3/5;
+        align-self: flex-end;
+        justify-self: end;
+        width: 295px;
+    }
+
+
+    /*##################################\
+                #How it works
+    \##################################*/
+    /* sytle list of steps and position it */
+   .steps-list{
+        grid-column: 1/13;
+        grid-row: 2/3;
+        /* for giving the list of stops specific
+         number of rows be cause its als a grid container */
+        gap: var(--gap-of-30);
+    }
+
+    /* also style the list childs and position them */
+    .steps-list li{
+        background-color: var(--Secondary-background);
+        padding: .625rem 1.25rem 1.875rem;
+        border-radius: var(--pic-radius);
+        display: flex;
+        flex-direction: column;
+        row-gap: var(--gap-of-20);
+    }
+
+    /* size the icons */
+    .steps-list li img{
+        width: 10rem;
+        aspect-ratio: 1/1;
+    }
+
+    li .step-description p{
+        width: 10.875rem;
+    }
+
+    /* style the steps description */
+    li .step-description{
+        text-align: center;
+    }
+
+    /* position steps lis */
+    .steps-list li:nth-child(1){
+        grid-column: 1/5;
+        grid-row: 1/2;
+    }
+
+    .steps-list li:nth-child(2){
+        grid-column: 5/9;
+        grid-row: 1/2;
+    }
+
+    .steps-list li:nth-child(3){
+        grid-column: 9/13;
+        grid-row: 1/2;
+    }
+
+    /*##################################\
+             #Subscribe widget
+    \##################################*/
+    /* add specific rows to the grid */
+    .widget-wrapper{
+        column-gap: var(--gap-of-30);
+        background-color: var(--Secondary-background);
+        border-radius: var(--pic-radius);
+        padding: 2.5rem 1.875rem;
+    }
+
+    /* position and styling the picture and positioning them */
+    #Subscribe-widget .pic{
+        grid-column: 1/7;
+        grid-row: 1/3;
+    }
+
+    #Subscribe-widget .pic img{
+        max-width: 18.75rem;
+        max-height: 17.5rem;
+        border-radius: var(--pic-radius);
+    }
+
+    /* positioning the headlin on the second row */
+    #Subscribe-widget .headlin{
+        grid-column: 7/13;
+        grid-row: 1/2;
+    }
+
+    /* also positioning the form and styling them */
+    #Subscribe-widget form{
+        grid-column: 7/13;
+        grid-row: 2/3;
+    }
+
+    /*##################################\
+                    #Foote
+    \##################################*/
+    /* positioning subscribe */
+    #footer-info .subscribe{
+        grid-column: 1/10;
+        grid-row: 3/4;
+    }
+    /* style the form */
+    .subscribe form{
+        position: relative;
+    }
+
+    .subscribe #email{
+        padding: 1.25rem 13rem 1.25rem 1.25rem;
+        max-width: 78%;
+    }
+
+    /* styling the subscribe button */
+    .subscribe #subscribe-btn{
+        justify-content: center;
+        padding: 1.1875rem 3.125rem;
+        margin-top: 0;
+        max-width: 11.1875rem;
+        justify-content: end;
+        position: absolute;
+        top: .01rem;
+        right: 6rem;
+    }
+
+    .subscribe #subscribe-btn img{
+        display: none;
+    }
+
+
 }
-
-
 
 
 
@@ -1614,38 +1974,24 @@ section{
         #DESKTOP && LARGE SCREENS
 \*=========================================*/
 @media screen and (min-width: 75rem){
-
     :root{
+        /*==Typograpgy==*/
+            /*-size-*/
+            --h1-fs:                  1.6rem;
+            --Main-header-fs:      4.1875rem;
+            --Primary-header-fs:    2.375rem;
+            --Auction-header:      3.1875rem;
+            --Secondary-header-fs:   1.75rem;
+            --Leading-fs:           1.375rem;
 
-        /*-Size-*/
-        --h1-fs:                 1.6rem;
-        --Main-header-fs:     4.1875rem;
-        --Primary-header-fs:   2.375rem;
-        --Secondary-header-fs:  1.75rem;
-        --Leading-fs:          1.375rem;
-        --Accesent-fs:          0.75rem;
-    
-    
-        /*-Line height-*/
-        --Mian-heading-line-height: 110%;
-        --line-height: 160%;
-        --Accesent-line-height: 120%;
+            /*-Line height-*/
+            --Mian-heading-line-height: 110%;
+            --line-height: 160%;
 
-    /*==Paddings && Margins==*/
 
-        /*-Padding-*/
-        --Sections-pad: 5.0625rem 7.875rem;
-        --Nav-pad:      1.25rem 3.125rem;
-    
-        /*-Margin-*/
-        /* --margin-buttom-h: 0.625rem; */
-    
-        /*==Gap==*/
-        --gap-bottom: 2.5rem;
-        --tending-gap: 0.9375rem;
-        --gap-of-20:  20px;
-        --gap-of-30:  30px;
-
+        /*==Padding && Margins*/
+            /*-Padding*/
+            --Nav-pad:      1.25rem 3.125rem;
     }
 
     /*##################################\
@@ -1702,12 +2048,21 @@ section{
     }
     
     .nave .sign-up a{
+        gap: .75rem;
+        width: 100%;
+        max-width: 9.5rem;
+        padding-block: 1.1875em;
+        padding-inline: 1.875em;
+        margin-block: 0;
+    }
+
+    .nave .sign-up a{
         display: flex;
         align-items: center;
         width: 100%;
     }
-    
-    /*##################################\
+
+     /*##################################\
                 #Hero Section
     \##################################*/
     #hero-section{
@@ -1716,18 +2071,14 @@ section{
         row-gap: var(--gap-bottom);
     }
 
-    /*-give more padding on the bottom of the header-*/
-    /* #hero-section .headlin h2{
-        /* margin-bottom: 0; */
-    /* }  */
-
     .highlighted-nft{
         margin-block: 1.8675rem;
+        /* display: none; */
     }
 
     .highlighted-nft .card-img-wrapper{
         overflow: hidden;
-        aspect-ratio: 4/4;
+        aspect-ratio: 4/3;
         border-radius: 20px 20px 0 0;
     } 
 
@@ -1735,10 +2086,329 @@ section{
     .get-started-btn{
         grid-column:1/7;
         grid-row: 2/3;
-        max-width: 64%;
+        max-width: 44%;
     }
 
     .info li{
-        padding-right: 2rem;
+        padding-right: 4.7rem;
+    }
+
+
+    /*##################################\
+            #Trending Collection
+    \##################################*/
+    /* repositon the first slider */
+    #first-slider{
+        grid-column: 1/5;
+        grid-row: 1;
+    }
+    /* repositon the second slider */
+    #second-slider{
+        grid-column: 5/9;
+        grid-row: 1;
+    }
+
+    /* repositon the first slider and display them */
+    #third-slider{
+        display: block;
+        grid-column: 9/13;
+        grid-row: 1;
+    } 
+
+    /*##################################\
+            #Top Rated Artists
+    \##################################*/
+    /* reposition the headlin section */
+    .headlin-section{
+        grid-column: 1/8;
+        grid-row: 1/2;
+    }
+
+    /* reposition view rankings button */    
+    .view-rankings-btn{
+        grid-column: 8/13;
+        grid-row: 1/2;
+    }
+
+    .artist-card-row  a{
+        display: flex;
+        flex-direction: column;
+        row-gap: var(--gap-of-20);
+        justify-content: center;
+    }
+    
+    .artist-card-row  a div:first-child{
+        width: 7.5rem;
+        aspect-ratio: 1/1;
+        position: relative;
+    }
+
+
+    [class ^= image]::before{
+        position: absolute;
+        top: 0;
+        left: -2.7rem;
+
+    }
+    
+    .artist-card-row  a .image7::before{
+        content: "7";
+    }
+    
+    .artist-card-row  a .image8::before{
+        content: "8";
+    }
+    
+    .artist-card-row  a .image9::before{
+        content: "9";
+    }
+    
+    .artist-card-row  a .image10::before{
+        content: "10";
+    }
+
+    .artist-card-row  a .image11::before{
+        content: "11";
+    }
+
+    .artist-card-row  a .image12::before{
+        content: "12";
+    }
+
+    .artist-card-row .artist-info{
+        text-align: center;
+    }
+
+    .ranck7,
+    .ranck8,
+    .ranck9,
+    .ranck10,
+    .ranck11,
+    .ranck12{
+        display: block;
+    }
+
+    /* repositon the ranks */
+    /* the first row */
+    .ranck1{
+        grid-column: 1/4;
+        grid-row: 1/2;
+    }
+
+    .ranck2{
+        grid-column: 4/7;
+        grid-row: 1/2;
+    }
+
+    .ranck3{
+        grid-column: 7/10;
+        grid-row: 1/2;
+    }
+
+    .ranck4{
+        grid-column: 10/13;
+        grid-row: 1/2;
+    }
+    
+    /* the second row */
+    .ranck5{
+        grid-column: 1/4;
+        grid-row: 2/3;
+    }
+
+    .ranck6{
+        grid-column: 4/7;
+        grid-row: 2/3;
+    }
+
+    .ranck7{
+        grid-column: 7/10;
+        grid-row: 2/3;
+    }
+
+    .ranck8{
+        grid-column: 10/13;
+        grid-row: 2/3;
+    }
+
+     /* the third row */
+    .ranck9{
+        grid-column: 1/4;
+        grid-row: 3/4;
+    }
+
+    .ranck10{
+        grid-column: 4/7;
+        grid-row: 3/4;
+    }
+
+    .ranck11{
+        grid-column: 7/10;
+        grid-row: 3/4;
+    }
+
+    .ranck12{
+        grid-column: 10/13;
+        grid-row: 3/4;
+    }
+    
+    /*##################################\
+            #Browse Categories
+    \##################################*/
+    /* grive each element that have this part of class more height */
+    [class ^= pic-container]{
+        width: 100%;
+        height: 76%;
+    }
+    
+    /* resize the icone */
+    .pic-card img{
+        width: 6.25rem;
+        aspect-ratio: 1/1;
+        margin: 4.375rem;
+    }
+
+    /* grive some padding to category text */
+    .category{
+        padding: 1.25rem 1.875rem 1.5625rem 1.875rem;
+    }
+
+    /*##################################\
+            #Discover more NFTs
+    \##################################*/ 
+    /* position the first card */
+    .frame li:nth-child(1){
+        grid-column: 1/5;
+        grid-row: 1/2;
+    }
+
+    /* position the second card */
+    .frame li:nth-child(2){
+        grid-column: 5/9;
+        grid-row: 1/2;
+    }
+    /* position also the third card or the laste */
+    .frame li:nth-child(3){
+        display: block;
+        grid-column: 9/13;
+        grid-row: 1/2;
+    }
+
+    /*##################################\
+                #How it works
+    \##################################*/
+    /* size the icons */
+    .steps-list li img{
+        width: 15.625rem;
+        aspect-ratio: 1/1;
+    }
+
+    .steps-list li{
+        padding: .625rem 1.875rem 1.875rem;
+    }
+
+    li .step-description p{
+        font-size: 1rem;
+        width: 16.875rem;
+    }
+
+     /*##################################\
+             #Subscribe widget
+    \##################################*/
+    /* add specific rows to the grid */
+    .widget-wrapper{
+        column-gap: 5rem;
+        padding: 3.75rem;
+    }
+
+    /* increas the img size */
+    #Subscribe-widget .pic img{
+        max-width: 26.5625rem;
+        max-height: 19.375rem;
+        border-radius: var(--pic-radius);
+    }
+
+    /* also positioning the form and styling them */
+    #Subscribe-widget form{
+        grid-column: 7/13;
+        grid-row: 2/3;
+        position: relative;
+    }
+    
+    /* button and input */
+    #email,
+    #subscribe-btn{
+        border-radius:var(--pic-radius);
+        width: 100%;
+    }
+    
+    /* styling the email filed */
+    .widget-wrapper #email{
+        padding: 1.3rem 13rem 1.3rem 1.25rem;
+        max-width: 96%;
+    }
+    
+    /* styling the subscribe button */
+    .widget-wrapper #subscribe-btn{
+        justify-content: center;
+        padding: 1.1875rem 3.125rem;
+        margin-top: 0;
+        max-width: 13.1875rem;
+        justify-content: end;
+        position: absolute;
+        top: -.04rem;
+        right: .08rem;
+    }
+
+
+    /*##################################\
+                    #Footer
+    \##################################*/
+    #footer-info{
+        column-gap: var(--gap-of-30);
+    }
+
+     /* Positioning the headling  */
+     .footer-headlin{
+        grid-column: 1/5;
+        grid-row: 1/2;
+    }
+
+    .footer-headlin p {
+        max-width: 24ch;
+    }
+
+       /* position the explore  */
+       .Explore{
+        grid-column: 5/8;
+        grid-row: 1/2;
+    }
+
+     /* styling and positioning subscribe */
+     #footer-info .subscribe{
+        grid-column: 8/13;
+        grid-row: 1/2;
+    }
+
+    .subscribe #email{
+        padding: 1.3rem 13rem 1.3rem 1.25rem;
+        max-width: 98%;
+    }
+
+    .subscribe p{
+        max-width: 30ch;
+    }
+
+    /* styling the subscribe button */
+    .subscribe #subscribe-btn{
+        position: absolute;
+        top: .01rem;
+        right: .08rem;
+    }
+
+    /*  poistioning copyright */
+    .copyright{
+        grid-column: 1/13;
+        grid-row: 2/3;
     }
 }
