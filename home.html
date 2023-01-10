@@ -30,7 +30,7 @@
       -->
       <link rel="stylesheet" href="./CSS/require.css">
 </head>
-<body ">
+<body>
 
     <!-- 
         ----Preloder----
@@ -731,21 +731,21 @@
             <p class="leading">Auction ends in:</p>
             <ul class="timer">
                 <li>
-                    <h2 class="hours">59</h2>
+                    <h2 class="hours">00</h2>
                     <p>Hours</p>
                 </li>
                 <li>
                     <h2>:</h2>
                 </li>
                 <li>
-                    <h2 class="minutes">59</h2>
+                    <h2 class="minutes">00</h2>
                     <p>Minutes</p>
                 </li>
                 <li>
                     <h2>:</h2>
                 </li>
                 <li>
-                    <h2 class="seconds">59</h2>
+                    <h2 class="seconds">00</h2>
                     <p>Seconds</p>
                 </li>
             </ul>
@@ -786,7 +786,7 @@
                 </div>
             </li>
             
-            <li>
+            <li class="second">
                 <div class="img">
                     <img src="./assets/Create-Collection-Icon.svg" alt="Collection">
                 </div>
@@ -840,9 +840,10 @@
             </div>
 
             <form name="form1" id="form1">
-                <input type="text" name="email1" id="email" placeholder="Enter your email here" class="avatar-name">
+                <input type="text" name="email1" id="email1-1" placeholder="Enter Your Email Address" class="avatar-name">
+                <input type="text" name="email1" id="email1-2" placeholder="Enter your email here" class="avatar-name">
                 <div id="error-message"></div>
-                <button type="button" id="subscribe-btn" class="items-flex">
+                <button type="submit" id="subscribe-btn" class="items-flex">
                     <img src="./assets/EnvelopeSimple.svg" alt="email">
                     <P class="avatar-name">Subscribe</P>
                 </button>
@@ -878,39 +879,10 @@
                 <p class="leading avatar-name">
                     NFT marketplace UI created with Anima for Figma.
                 </p>
-                <div class="cummunity">
-                    <p>
-                        Join our community
-                    </p class="avatar-name">
-                    <ul class="social">
-                        <li>
-                            <a href="#">
-                                <img src="./assets/DiscordLogo.svg" alt="Discord">
-                            </a>
-                        </li>
-
-                        <li>
-                            <a href="#">
-                                <img src="./assets/YoutubeLogo.svg" alt="Youtube">
-                            </a>
-                        </li>
-
-                        <li>
-                            <a href="#">
-                                <img src="./assets/TwitterLogo.svg" alt="Twitter">
-                            </a>
-                        </li>
-
-                        <li>
-                            <a href="#">
-                                <img src="./assets/InstagramLogo.png" alt="Instagram">
-                            </a>
-                        </li>
-                    </ul>
-                </div>
             </div>
-        </div>
 
+        </div>
+        
         <div class="Explore">
             <h4>
                 Explore
@@ -929,22 +901,36 @@
                 </li>
             </ul>
         </div>
-        <!-- Subscribe -->
-        <div class="subscribe">
-            <div class="headlin">
-                <h4>Join Our Weekly Digest</h4>
-                <p class="avatar-name">Get exclusive promotions &
-                     updates straight to your inbox.</p>
-            </div>
 
-            <form name="form2" id="form2">
-                <input type="text" name="email2" id="email" placeholder="Enter Your Email Address" class="avatar-name">
-                <div id="error-message"></div>
-                <button type="button" id="subscribe-btn" class="items-flex">
-                    <img src="./assets/EnvelopeSimple.svg" alt="email">
-                    <P class="avatar-name">Subscribe</P>
-                </button>
-            </form>
+        <div class="cummunity">
+            <h4>
+                Join our community
+            </h4>
+            <ul class="social">
+                <li>
+                    <a href="#">
+                        <img src="./assets/DiscordLogo.svg" alt="Discord">
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <img src="./assets/YoutubeLogo.svg" alt="Youtube">
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <img src="./assets/TwitterLogo.svg" alt="Twitter">
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <img src="./assets/InstagramLogo.png" alt="Instagram">
+                    </a>
+                </li>
+            </ul>
         </div>
         
         <div class="copyright">

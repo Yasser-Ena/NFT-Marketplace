@@ -318,6 +318,14 @@ section{
         background-color: var(--Secondary-background);
         border-block: 2px solid var(--Text);
         z-index: 4;
+        animation-name: translate;
+        animation-duration: .1s;
+        animation-timing-function: ease-out ;
+    }
+
+    @keyframes translate{
+        from{height: 230px;}
+        to{height: 248px;}
     }
     
     /*--nave links--*/
@@ -1234,29 +1242,32 @@ section{
         grid-row: 3/4;
     }
 
+    /* indesplay the input that haves placeholder whit value of enter your email here */
+    #email1-2{
+        display: none;
+    }
+
     /* button and input */
-     #email,
+    input[type = text],
     #subscribe-btn{
         border-radius:var(--pic-radius);
         width: 100%;
     }
     
     /* styling the email filed */
-    #email{
-        padding: .75rem 1.25rem;
+    input[type = text]{
+        padding: .84375rem 1.25rem;
         background-color: var(--Text);
         color: var(--Primary-background);
-        border:1px solid #858584;
     }
     
-    #email::placeholder{
+    input[type = text]::placeholder{
         color: var(--Primary-background);
         font-size: 1rem;
     }
     
-    #email:focus{
-        outline: none;
-        border: 1px solid var(--Call-to-action);
+    input[type = text]:focus{
+        outline:none ;
     }
     
     /* styling the subscribe button */
@@ -1264,7 +1275,7 @@ section{
         justify-content: center;
         background-color: var(--Call-to-action);
         /* border: none; */
-        padding: .75rem;
+        padding: .7375rem;
         margin-top: 1rem;
         transition: all 200ms ease-out;
     }
@@ -1302,13 +1313,15 @@ section{
 
     /* style the success notification */
     .alert{
-        position: absolute;
-        top: 0;
-        left: 0;
-        transform:translate(34%, 290%);
+        /* for center */
+	    Position:absolute;
+	    top:50%;
+	    left:50%;
+	    Transform: translate(-50%,-50%);
         background:linear-gradient(100.92deg, #A259FF 13.57%, #FF6250 97.65%);
         padding: var(--gap-of-30);
-        width: 60%;
+        width: 90%;
+        max-width: 20rem;
         border-radius: var(--pic-radius);
         display: none;
     }
@@ -1372,44 +1385,18 @@ section{
         font-family: var(--Primary);
         color: var(--Footer-text);
     }
-    
-    .additional-info .leading{
-        margin-bottom: var(--gap-of-20);
-        word-spacing: -1px;
-    }
 
     .additional-info p{
         font-size: var(--avatar-name);
     }
-
-    .additional-info .cummunity p{
-        margin-bottom: .9375rem;
-    }
-
-    .additional-info .cummunity .social{
-        display: flex;
-        column-gap: var(--margin-buttom-h);
-    }
-
-    .cummunity .social li{
-        width: 2rem;
-        aspect-ratio: 1/1;
-        border-radius: 50%;
-        transition: all .3s ease-out;
-    }
-
-    .cummunity .social li:is(:hover, :active){
-        box-shadow:  0 0 6px rgba(80, 78, 78, 0.945);
-        transform: scale(.8);
-    }
-
+    
     /* position the explore and styling them */
     .Explore{
         grid-column: 1/13;
         grid-row: 2/3;
     }
 
-    .Explore h4{
+    #footer-info h4{
         font-family: var(--Accesent);
         font-weight: var(--Secondary-header-fw);
         margin-bottom: var(--gap-of-20);
@@ -1426,32 +1413,39 @@ section{
         margin-bottom: var(--gap-of-20);
     }
 
-    .Explore .pages li:is(:hover, :active){
+    .Explore .pages a:is(:hover, :active){
         color: var(--Call-to-action);
     }
 
-    /* styling and positioning subscribe */
-    #footer-info .subscribe{
+    /* styling and positioning cummunity */
+    #footer-info .cummunity{
         grid-column: 1/13;
         grid-row: 3/4;
     }
 
-    .subscribe .headlin h4{
-        font-family: var(--Accesent);
-        font-weight: var(--Secondary-header-fw);
-        margin-bottom: var(--gap-of-20);
+    .cummunity .social{
+        display: flex;
+        column-gap: var(--margin-buttom-h);
     }
 
-    .subscribe .headlin p{
-        margin-bottom: var(--gap-of-20);
-        color: var(--Footer-text);
+    .cummunity .social li{
+        width: 2rem;
+        aspect-ratio: 1/1;
+        border-radius: 50%;
+        transition: all .3s ease-out;
     }
+
+    .cummunity .social li:is(:hover, :active){
+        box-shadow:  0 0 6px rgba(80, 78, 78, 0.945);
+        transform: scale(.8);
+    }
+
 
     /* styling and poistioning copyright */
     .copyright{
         grid-column: 1/13;
         grid-row: 4/5;
-        border-top: 1px solid #858584;
+        border-top: 2px solid #858584;
     }
 
     .copyright P{
@@ -1931,41 +1925,6 @@ section{
         grid-row: 2/3;
     }
 
-    /*##################################\
-                    #Foote
-    \##################################*/
-    /* positioning subscribe */
-    #footer-info .subscribe{
-        grid-column: 1/10;
-        grid-row: 3/4;
-    }
-    /* style the form */
-    .subscribe form{
-        position: relative;
-    }
-
-    .subscribe #email{
-        padding: 1.25rem 13rem 1.25rem 1.25rem;
-        max-width: 78%;
-    }
-
-    /* styling the subscribe button */
-    .subscribe #subscribe-btn{
-        justify-content: center;
-        padding: 1.1875rem 3.125rem;
-        margin-top: 0;
-        max-width: 11.1875rem;
-        justify-content: end;
-        position: absolute;
-        top: .01rem;
-        right: 6rem;
-    }
-
-    .subscribe #subscribe-btn img{
-        display: none;
-    }
-
-
 }
 
 
@@ -2297,19 +2256,24 @@ section{
     /*##################################\
                 #How it works
     \##################################*/
+
+    .steps-list li{
+        padding: .625rem 1.875rem 1.875rem;
+    }
     /* size the icons */
     .steps-list li img{
         width: 15.625rem;
         aspect-ratio: 1/1;
     }
 
-    .steps-list li{
-        padding: .625rem 1.875rem 1.875rem;
-    }
 
     li .step-description p{
         font-size: 1rem;
         width: 16.875rem;
+    }
+
+    .second .step-description {
+        margin-bottom: 1.375rem;
     }
 
      /*##################################\
@@ -2334,30 +2298,37 @@ section{
         grid-row: 2/3;
         position: relative;
     }
-    
-    /* button and input */
-    #email,
-    #subscribe-btn{
-        border-radius:var(--pic-radius);
-        width: 100%;
+
+    /* indesplay the input that haves placeholder whit value of enter your email address */
+    #email1-1{
+        display: none;
     }
-    
-    /* styling the email filed */
-    .widget-wrapper #email{
-        padding: 1.3rem 13rem 1.3rem 1.25rem;
-        max-width: 96%;
+
+    /* desplay the input that haves placeholder whit value of enter your email here */
+    #email1-2{
+        display: block;
+    }
+
+    .widget-wrapper input[type = text]{
+        padding: 1.28125rem 13.5rem 1.28125rem 1.25rem;
+        max-width: 98%;
     }
     
     /* styling the subscribe button */
     .widget-wrapper #subscribe-btn{
         justify-content: center;
-        padding: 1.1875rem 3.125rem;
+        padding: 1.075rem 3.125rem;
         margin-top: 0;
         max-width: 13.1875rem;
         justify-content: end;
         position: absolute;
-        top: -.04rem;
-        right: .08rem;
+        top: 0;
+        right: .1em;
+    }
+
+    .alert{
+        width: 90%;
+        max-width: 24rem;
     }
 
 
@@ -2378,32 +2349,16 @@ section{
         max-width: 24ch;
     }
 
-       /* position the explore  */
-       .Explore{
+    /* position the explore  */
+   .Explore{
         grid-column: 5/8;
         grid-row: 1/2;
     }
 
-     /* styling and positioning subscribe */
-     #footer-info .subscribe{
+    /* styling and positioning subscribe */
+    #footer-info .cummunity{
         grid-column: 8/13;
         grid-row: 1/2;
-    }
-
-    .subscribe #email{
-        padding: 1.3rem 13rem 1.3rem 1.25rem;
-        max-width: 98%;
-    }
-
-    .subscribe p{
-        max-width: 30ch;
-    }
-
-    /* styling the subscribe button */
-    .subscribe #subscribe-btn{
-        position: absolute;
-        top: .01rem;
-        right: .08rem;
     }
 
     /*  poistioning copyright */
