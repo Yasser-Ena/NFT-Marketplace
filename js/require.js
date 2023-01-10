@@ -54,7 +54,7 @@ document.querySelector('#menu').addEventListener("click", ()=> {
  */
 
 // conunt down to:
-const time = "january 10, 2023 14:34:00";
+const time = "january 10, 2023 18:00:00";
 
 
 //conunt down function
