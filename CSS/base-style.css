@@ -1,0 +1,558 @@
+/*=========================================*\
+              #CUSTOM PROPERTYS
+\*=========================================*/
+:root{
+    
+    /*==Colors==*/
+   
+       /*-Background-*/
+       --Primary-background:   #2B2B2B;
+       --Secondary-background: #3B3B3B;
+       --Action-timer-bg: rgba(59, 59, 59, 0.5);
+   
+       /*-Tex-*/
+       --Text:                   #ffffff;
+       --Footer-text:            #CCCCCC;
+       --Coption-and-Label-text: #858584;
+   
+       /*-Buttons-*/
+       --Call-to-action:         #A259FF;
+   
+   /*==Typograpgy==*/
+   
+       /*-Font family-*/
+       --Primary: 'Work Sans', sans-serif;
+       --Accesent: 'Space Mono', sans-serif;
+   
+       /*-Size-*/
+       --h1-fs:                     .9rem;
+       --Secondary-header-fs-h4: 1.375rem;
+       --Leading-fs:                 1rem;
+       --avatar-name:                1rem;
+       --navlinks-fs:                1rem;
+       --Accesent-fs:             0.75rem;
+       
+       
+       /*-Weight-*/
+       --Primary-header-fw:     600;
+       --Secondary-header-fw:   700;
+       --Leading-w:             400;
+       
+       /*-Line height-*/
+       --line-height:              140%;
+   
+   /*==Paddings && Margins==*/
+   
+       /*-Padding-*/
+       --Sections-pad: 2.1875rem 1.875rem;
+       --Nav-pad:      .9375rem 1.875rem;
+   
+       /*-Margin-*/ 
+       --margin-buttom-h: 0.625rem;
+       
+   /*==Gap==*/
+       --gap-bottom: 2.5rem;
+       --gap-of-20:  1.25rem;
+   
+   /*==Border radius==*/
+       --pic-radius: 1.25rem;
+   }
+   
+   
+   /*=========================================*\
+                       #RESET
+   \*=========================================*/
+   *, 
+   *::after,
+   *::before{
+       padding: 0;
+       margin:  0;
+       box-sizing: border-box;
+   }
+   
+   li{
+       list-style: none;
+       color: inherit;
+   }
+   
+   a{
+       text-decoration: none;
+       color: inherit;
+   }
+   
+   button,
+   input{
+       -webkit-appearance: none;
+       -moz-appearance: none;
+       appearance: none;
+       background-color: transparent;
+       border: none;
+       cursor: pointer;
+   }
+   
+   img {
+       display: block;
+       max-width: 100%;
+   }
+   
+   
+   /*=========================================*\
+                    #BASE STYLE
+   \*=========================================*/
+   body{
+       background-color: var(--Primary-background);
+       color: var(--Text);
+       overflow: hidden;
+       min-height: 100vh;
+       font-family: var(--Primary);
+   }
+   
+   /*--loaded--*/
+   .loaded{overflow: visible;}
+   
+   ::-webkit-scrollbar{width: 1rem;}
+   
+   ::-webkit-scrollbar-track{
+       background-color: var(--Coption-and-Label-text);
+       box-shadow: inset 0 0 5px var(--Text);
+   }
+   
+   ::-webkit-scrollbar-thumb{
+       background-color: var(--Action-timer-bg);
+       border-radius: 4px;
+   }
+   
+   ::-webkit-scrollbar-thumb:hover{background-color: var(--Call-to-action);}
+   
+   /*--preloader--*/
+   .preloader{
+       position: fixed;
+       top: 0;
+       left: 0;
+       width: 100%;
+       height: 100%;
+       background-color: var(--Call-to-action);
+       display: grid;
+       place-items: center;
+       z-index: 6;
+   }
+   
+   .preloader.loaded{display: none;}
+   
+   .preloader-circle{
+       width: 3rem;
+       height: 3rem;
+       border: 6px solid transparent;
+       border-block: 6px solid var(--Text);
+       border-radius: 50%;
+       animation-name: loading;
+       animation-duration: 2s;
+       animation-iteration-count: infinite;
+       animation-timing-function: linear;
+   }
+   
+   @keyframes loading{
+       from{transform: rotate(0);}
+       to{transform: rotate(1turn);}
+   }
+   
+   /*=========================================*\
+                   #TYPOGRAPHY
+   \*=========================================*/
+   /****Navigation****/
+    /*--logo text--*/
+    h1{
+        font-family:var(--Accesent);
+        font-size: var(--h1-fs);
+        font-weight: var(--Primary-header-fw);
+    }
+
+    /*--nave links--*/
+    .nave li a,
+    .nave .sign-up p{
+        font-size: var(--navlinks-fs);
+        font-weight: var(--Primary-header-fw);
+    }
+    
+    p{
+        font-size: var(--Leading-fs);
+        font-weight: var(--Leading-w);
+        line-height: var(--line-height);
+    }
+
+    .avatar-name{
+        font-size: var(--avatar-name);
+        font-weight: var(--Leading-w);
+    }
+
+    h4{
+        font-size: var(--Secondary-header-fs-h4);
+        font-weight: var(--Primary-header-fw);
+    }
+
+    /****input and button****/
+    input{
+        font-family: var(--Primary);
+        font-size: var(--Leading-fs);
+        font-weight: var(--Leading-w);
+    }
+
+/*=========================================*\
+                  #REUSED
+\*=========================================*/
+/*****The grid for the sction containers*/
+.grid{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    /* max-width: 375px; */
+}
+
+/****The flex for align a text withe logo****/
+.items-flex{
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+
+/****style the buttob links****/
+.button a{
+    padding-block: 20px;
+    justify-content: center;
+    border-radius: var(--pic-radius)
+}
+/*=========================================*\
+                 #MOBILE SYLE
+\*=========================================*/
+    /*##################################\
+                #Navegation
+    \##################################*/
+    .navgation{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: var(--Nav-pad);
+        position: relative;
+        /* I want to make translate afect */
+    }
+
+    /*--logo--*/
+    /* logo icone */
+    .logo img{
+        max-width: 1.5rem;
+        aspect-ratio: 1/1;
+        filter: invert(49%) sepia(65%) saturate(5588%) hue-rotate(243deg) brightness(102%) contrast(101%);
+    }
+    
+    /* the liste of links its by default invisible */
+    .nave{display: none;}
+
+    /* syle the menu button */
+    #menu{
+        width: 1.5rem;
+        height: 1.5rem;
+        transition: ease-out .04s;
+    }
+    
+    #menu:hover,
+    #menu:active{
+        filter: invert(49%) sepia(65%) saturate(5588%) hue-rotate(243deg) brightness(102%) contrast(101%);
+    }
+
+    /*--nave from JavaScript--*/
+    .nave.active{
+        display: block;
+        position: absolute;
+        top: 3.5rem;
+        left: 0;
+        width: 100%;
+        background-color: var(--Secondary-background);
+        border-block: 2px solid var(--Text);
+        z-index: 4;
+        animation-name: translate;
+        animation-duration: .1s;
+        animation-timing-function: ease-out ;
+    }
+
+    @keyframes translate{
+        from{height: 230px;}
+        to{height: 248px;}
+    }
+    
+    /*--nave links--*/
+    .nave .marketplace,
+    .nave .rankings,
+    .nave .wallet{
+        padding-block: 1.25em;
+        padding-inline: 2.125em;
+        border-bottom: 1px solid #858584;
+        transition: ease-in .01ms;
+    }
+
+    .nave .marketplace:hover,
+    .nave .marketplace:active,
+    .nave .rankings:hover,
+    .nave .rankings:active,
+    .nave .wallet:hover,
+    .nave .wallet:active{
+        color: var(--Call-to-action);
+        box-shadow: inset 0 0 5px var(--Text);
+    }
+
+    /*--sign up button*/
+    .nave .sign-up{
+        margin-left: 2.125em;
+    }
+    
+    .nave .sign-up a{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: .75rem;
+        background-color: var(--Call-to-action);
+        width: 50%;
+        max-width: 9.5em;
+        padding-block: .5em;
+        padding-inline: 1.875em;
+        margin-block: .8em;
+        border-radius: var(--pic-radius);
+        transition: all 300ms ease-out;
+    }
+
+    .nave .sign-up a:is(:hover, :active){
+        box-shadow: 0 0 10px rgba(31, 27, 27, 0.829);
+        transform: scale(.9);
+    }
+
+    .sign-up a img{
+        width: 1.25rem;
+        aspect-ratio: 1/1;
+    }
+
+
+     /*##################################\
+                    #Footer
+    \##################################*/
+    #footer-info{
+        padding: var(--Sections-pad);
+        background-color: var(--Secondary-background);
+        row-gap: var(--gap-bottom);
+    }
+    /* Positioning the headling and style them */
+    .footer-headlin{
+        grid-column: 1/13;
+        grid-row: 1/2;
+    }
+
+    /* give some margin on the bottom of logo */
+    .footer-headlin .logo{
+        margin-bottom: var(--gap-of-20);
+    }
+
+    .footer-headlin .logo img{
+        width: 2rem;
+        aspect-ratio: 1/1;
+    }
+
+    .footer-headlin .logo h1{
+        font-size: 1.3rem;
+    }
+
+    /* style the additional info */
+    .additional-info p{
+        font-family: var(--Primary);
+        color: var(--Footer-text);
+    }
+
+    .additional-info p{
+        font-size: var(--avatar-name);
+    }
+    
+    /* position the explore and styling them */
+    .Explore{
+        grid-column: 1/13;
+        grid-row: 2/3;
+    }
+
+    #footer-info h4{
+        font-family: var(--Accesent);
+        font-weight: var(--Secondary-header-fw);
+        margin-bottom: var(--gap-of-20);
+    }
+
+    .Explore .pages li{
+        font-size: var(--avatar-name);
+        font-weight: var(--Leading-w);
+        color: var(--Footer-text)
+    }
+
+    .Explore .pages li:nth-child(1),
+    .Explore .pages li:nth-child(2){
+        margin-bottom: var(--gap-of-20);
+    }
+
+    .Explore .pages a:is(:hover, :active){
+        color: var(--Call-to-action);
+    }
+
+    /* styling and positioning cummunity */
+    #footer-info .cummunity{
+        grid-column: 1/13;
+        grid-row: 3/4;
+    }
+
+    .cummunity .social{
+        display: flex;
+        column-gap: var(--margin-buttom-h);
+    }
+
+    .cummunity .social li{
+        width: 2rem;
+        aspect-ratio: 1/1;
+        border-radius: 50%;
+        transition: all .3s ease-out;
+    }
+
+    .cummunity .social li:is(:hover, :active){
+        box-shadow:  0 0 6px rgba(80, 78, 78, 0.945);
+        transform: scale(.8);
+    }
+
+
+    /* styling and poistioning copyright */
+    .copyright{
+        grid-column: 1/13;
+        grid-row: 4/5;
+        border-top: 2px solid #858584;
+    }
+
+    .copyright P{
+        margin-top: var(--gap-of-20);
+        font-size: var(--Accesent-fs);
+    }
+
+
+
+
+
+/*=========================================*\
+        #DESKTOP && LARGE SCREENS
+\*=========================================*/
+@media screen and (min-width: 75rem){
+    :root{
+        /*==Typograpgy==*/
+            /*-size-*/
+            --h1-fs:                  1.6rem;
+            --Primary-header-fs:    2.375rem;
+            --Auction-header:      3.1875rem;
+            --Secondary-header-fs:   1.75rem;
+            --Leading-fs:           1.375rem;
+
+
+        /*==Padding && Margins*/
+            /*-Padding*/
+            --Nav-pad:      1.25rem 3.125rem;
+    }
+
+    /*##################################\
+                #Navegation
+    \##################################*/
+    .navgation{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: var(--Nav-pad);
+        position: relative;
+        /* I want to make translate afect */
+    }
+
+    /*--logo--*/
+    /* logo icone */
+    .logo img{
+        max-width: 2rem;
+    }
+    
+    /* the liste of links its by default invisible */
+    .nave{
+        display: flex;
+        column-gap: .625rem;
+    }
+
+    /* syle the menu button */
+    #menu{
+        display: none;
+    }
+
+    /*--nave links--*/
+    .nave .marketplace,
+    .nave .rankings,
+    .nave .wallet{
+        padding: .75rem 1.25rem;
+        border-bottom: none;
+        align-self: center;
+    }
+
+    .nave .marketplace:hover,
+    .nave .marketplace:active,
+    .nave .rankings:hover,
+    .nave .rankings:active,
+    .nave .wallet:hover,
+    .nave .wallet:active{
+        color: var(--Call-to-action);
+        box-shadow: none;
+    }
+
+    /*--sign up button*/
+    .nave .sign-up{
+        margin-left: 0;
+    }
+    
+    .nave .sign-up a{
+        gap: .75rem;
+        width: 100%;
+        max-width: 9.5rem;
+        padding-block: 1.1875em;
+        padding-inline: 1.875em;
+        margin-block: 0;
+    }
+
+    .nave .sign-up a{
+        display: flex;
+        align-items: center;
+        width: 100%;
+    }
+
+    /*##################################\
+                    #Footer
+    \##################################*/
+    #footer-info{
+        column-gap: var(--gap-of-30);
+    }
+
+     /* Positioning the headling  */
+     .footer-headlin{
+        grid-column: 1/5;
+        grid-row: 1/2;
+    }
+
+    .footer-headlin p {
+        max-width: 24ch;
+    }
+
+    /* position the explore  */
+   .Explore{
+        grid-column: 5/8;
+        grid-row: 1/2;
+    }
+
+    /* styling and positioning subscribe */
+    #footer-info .cummunity{
+        grid-column: 8/13;
+        grid-row: 1/2;
+    }
+
+    /*  poistioning copyright */
+    .copyright{
+        grid-column: 1/13;
+        grid-row: 2/3;
+    }
+}

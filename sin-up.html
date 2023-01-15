@@ -8,9 +8,9 @@
         <!-- 
         -Primary mata tags
      -->
-     <meta name="title" content="Connect a wallet">
+     <meta name="title" content="Creat Acount">
      <meta name="descption" content="Her you can by and sell NFTs">
-     <title>NFT Marketplace | Connect a wallet</title>
+     <title>NFT Marketplace | Create Acount</title>
      
      <!-- 
         ----Favicon----
@@ -29,7 +29,7 @@
         ----link stylesheet----
       -->
       <link rel="stylesheet" href="./CSS/base-style.css">
-      <link rel="stylesheet" href="./css/wallet.css">
+      <link rel="stylesheet" href="./css/creat-acount-style.css">
 </head>
 <body>
     
@@ -64,7 +64,7 @@
                 <a href="./Connect-a-wallet.html">Connect a wallet</a>
             </li>
             <li class="sign-up">
-                <a href="./sin-up.html">
+                <a href="./creat-acount.html">
                     <img src="./assets/home/User.svg" alt="User">
                     <p class="singup-text">
                         Sing Up
@@ -78,58 +78,61 @@
         </button>
      </nav>
 
-    <!--                   -!->
-        ----Connect a wallet----
+        <!--                   -!->
+        ----Creat acount----
     <--                     -->
     
-    <section id="Connect-a-wallet" class="grid">
-        <!-- placeholder -->
+    <section id="creat-acount" class="grid">
         <div class="image-container">
             <div class="image-wrapper">
                 <img src="./assets/creat-acount/Image-Placeholder.png" alt="Space">
             </div>
         </div>
 
-        <!-- connect wallet -->
-        <div class="connect-wallet">
-            <!-- headlin -->
+        <div class="creat-acount-form">
             <div class="main-headlin">
                 <h2 class="main-heading">
-                    Connect wallet
+                    Create account
                 </h2>
                 <p class="leading">
-                    Choose a wallet you want to connect. <br>
-                     There are several wallet providers.
+                    Welcome! enter your details and start <br>
+                    creating,collecting and selling NFTs.
                 </p>
             </div>
-            
-            <!-- wallet options -->
-            <div class="wallet-options grid">
-                <!-- metamask wallet -->
-                <button type="button" id="metamask" class="flex">
-                    <img src="./assets/wallet/Metamask.svg" >
-                    <p class="metamask">Metamask</p>
-                </button>
+            <form name="user-info">
+                <div class="inputs grid">
+                    <i class="user">
+                        <img src="./assets/creat-acount/User.svg" class="icon">
+                    </i>
+                    <input type="text" name="Username" placeholder="Username" autocapitalize="on" id="username">
+                    <div class="username-error">
+                    </div>
 
-                <!-- Wallet Connect -->
-                <button type="button" id="wallet-connect" class="flex">
-                    <img src="./assets/wallet/WalletConnect.svg" >
-                    <p class="metamask">Wallet Connect</p>
-                </button>
+                    <i class="email">
+                        <img src="./assets/creat-acount/EnvelopeSimple.svg" class="icon" >
+                    </i>
+                    <input type="text" name="Email" placeholder="Email Address" id="email">
+                    <div class="email-error-message">
+                    </div>
 
-                <!-- wallet connect form -->
-                <div class="wallet-connect-form"></div>
+                    <i class="password">
+                        <img src="./assets/creat-acount/LockKey.svg" class="icon">
+                    </i>
+                    <input type="password" name="Password" placeholder="Password" id="password">
 
-                <!-- Coinbase -->
-                <button type="button" id="coinbase" class="flex">
-                    <img src="./assets/wallet/Coinbase.svg" >
-                    <p class="metamask">Coinbase</p>
-                </button>
+                    <i class="confirm">
+                        <img src="./assets/creat-acount/LockKey.svg" class="icon">
+                    </i>
+                    <input type="password" name="Confirm Password" placeholder="Confirm Password" id="confirm-password">
+                    <div class="password-confirmation-error">
+                    </div>
+                    <div class="Password-error">
+                    </div>
+                </div>
 
-                <!-- coinbase form -->
-                <div class="coinbase-form"></div>
-
-            </div>
+                <input type="submit" value="Create account" id="sinup">
+                
+            </form>
         </div>
     </section>
 
@@ -218,6 +221,6 @@
     <!-- 
         ----Link script files----
     -->
-     <script src="./js/wallet.js" type="module"></script>
+     <script src="./js/sing-up.js" type="module"></script>
 </body>
 </html>

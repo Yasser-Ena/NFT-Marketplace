@@ -1,4 +1,3 @@
-
 /*=========================================*\
               #CUSTOM PROPERTYS
 \*=========================================*/
@@ -28,6 +27,7 @@
             --Accesent: 'Space Mono', sans-serif;
 
            /*-Size-*/
+           --Primary-fs    :          1.375rem;
            --Main-header-fs:          2.375rem; 
            --Leading-fs:                 1rem;
            --avatar-name:                1rem;
@@ -45,12 +45,12 @@
        /*==Paddings && Margins==*/
        
            /*-Margin-*/
-           --margin-buttom-main-h   : 1.25rem;
+           --margin-bottom-main-h   : 1.25rem;
            --headlin-margin-bottom  : 1.875rem;
            --margin-of-30           : 1.875rem;
            
        /*==Gap==*/
-           --gap-of-15: .9375rem;
+           --gap-of-20: 1.25rem;
 
         /*==Border radius==*/
            --pic-radius: 20px;
@@ -58,7 +58,7 @@
 
 /*=========================================*\
                        #RESET
-   \*=========================================*/
+\*=========================================*/
    *, 
    *::after,
    *::before{
@@ -122,13 +122,12 @@ input[type = submit]{
     font-weight: var(--Primary-header-fw);
 }
 
-.email-error-message,
-.password-confirmation-error,
-.Password-error,
-.username-error{
-    font-size: var(--Accesent-fs);
-    line-height: var(--line-height);
+button p{
+    font-size: var(--Primary-fs);
+    font-weight: var(--Primary-header-fw);
+    font-family: var(--Primary);
 }
+
 
 /*=========================================*\
                     #REUSED
@@ -138,12 +137,19 @@ input[type = submit]{
     grid-template-columns: repeat(12, 1fr);
 }
 
+.flex{
+    display: flex;
+    align-items: center;
+    column-gap: var(--gap-of-20);
+}
+
 /*=========================================*\
                  #MOBILE SYLE
 \*=========================================*/
     /*##################################\
-              #Creat Acount
+              #Connect a Wallet
     \##################################*/
+    /*=-Placeholder-=*/
     /* postion the image container */
     .image-container{
         grid-column: 1/13;
@@ -164,12 +170,16 @@ input[type = submit]{
         object-position: center;
     }
 
+    /*=-Connect wallet-=*/
+        
     /* positon the creat acount form and give a bit of padding */
-    .creat-acount-form{
+    .connect-wallet{
         grid-column: 1/13;
         grid-row: 2/3;
         padding: 1.875rem 1.875rem 2.5rem;
     }
+
+    /*-headlin-*/
 
     /* give a bit of padding to the main-headlin and main-heading */
     .main-headlin{
@@ -177,226 +187,57 @@ input[type = submit]{
     }
 
     .main-heading{
-    margin-bottom: var(--margin-buttom-main-h);
+    margin-bottom: var(--margin-bottom-main-h);
     }
 
-    /* postion and style the form inputs */
-    /* set the gap and a bit of margin on the bottom */
-    form div{
-        row-gap: var(--gap-of-15);
-        margin-bottom: var(--margin-of-30);
-        position: relative;
+    /*-wallet options-*/
+    /* give the wallet options row gap */
+    .wallet-options{
+        row-gap: var(--gap-of-20);
     }
 
-    /* sizing the icons */
-    .icon{
-        width: 1.25rem;
-        aspect-ratio: 1/1;
-    }
-
-    /* give inputs border radius */
-    input{
+    /* styling and positoning the metamask wallet button */
+    #metamask,
+    #wallet-connect,
+    #coinbase{
+        background-color: var(--Secondary-background);
+        border: 1px solid var(--Call-to-action);
         border-radius: var(--pic-radius);
-    }
-
-    /* style type: text & password */
-    input[type = text],
-    input[type = password]{
-        padding: .75rem 1.25rem .75rem 3.25rem;
-        background-color: var(--Text);
-        outline: none;
-    }
-
-    /* change the color of the place holder */
-    input[type = text]::placeholder,
-    input[type = password]{
-        color: var(--Primary-background);
-    }
-
-    /* postin the inputs items */
-    .inputs #username{
-        grid-column: 1/13;
-        grid-row: 1/2;
-        align-self: flex-start;
-    }
-
-
-    /* positin the user icon iside the username input from the top */
-    .inputs .user{
-        position: absolute;
-        top: .78rem;
-    }
-    
-    /* position the user error */
-    .inputs .username-error{
-        grid-column: 1/13;
-        grid-row: 1/2;
-        align-self: flex-end;
-    }
-
-    .inputs #email{
-        grid-column: 1/13;
-        grid-row: 2/3;
-        align-self: flex-start;
-    }
-    
-    /* positin the email icon iside the email input from the top */
-    .inputs .email{
-        position: absolute;
-        top: 4.4rem;
-    }
-
-    /* postion the email error message */
-    .inputs .email-error-message{
-        grid-column: 1/13;
-        grid-row: 2/3;
-        align-self: flex-end;
-    }
-    
-    
-    .inputs #password{
-        grid-column: 1/13;
-        grid-row: 3/4;
-    }
-
-    /* positin the password icon iside the password input from the top */
-    .inputs .password{
-        position: absolute;
-        top: 8.1rem;
-    }
-    
-    .inputs #confirm-password{
-        grid-column: 1/13;
-        grid-row: 4/5;
-        align-self: flex-start;
-    }
-
-    /* positin the cnfirm icon iside the confirm password input from the top */
-    .inputs .confirm{
-        position: absolute;
-        top: 11.68rem;
-    }
-
-    /* position the confirm error message */
-    .inputs .password-confirmation-error,
-    .inputs .Password-error{
-        grid-column: 1/13;
-        grid-row: 4/5;
-        align-self: flex-end;
-    }
-
-    /* position the icons inside the inputs field from the left */
-    .inputs .user,
-    .inputs .email,
-    .inputs .password,
-    .inputs .confirm{
-        left: 1.2rem;
-    }
-    
-    /* style the creat acount button */
-    input[type = submit]{
-        background-color: var(--Call-to-action);
-        padding: .75rem 1.25rem;
-        width: 100%;
+        padding: .8125rem 1.25rem .8125rem 2.5rem;
         color: var(--Text);
-        transition: ease-in .1s;
     }
 
-    input[type = submit]:is(:hover, :active){
+    #metamask:is(:hover, :active),
+    #wallet-connect:is(:hover, :active),
+    #coinbase:is(:hover, :active){
         transform: scale(.99);
         box-shadow: 0 0 10px rgba(31, 27, 27, 0.829);
     }
 
-    /*##-active part-##*/
-
-    /* style all the error messages */
-    .username-error,
-    .email-error-message,
-    .password-confirmation-error,
-    .Password-error{
-        margin-bottom: 0;
-        text-align: center;
-        color: var(--Error-message);
+    #metamask img,
+    #wallet-connect img,
+    #coinbase img{
+        width: 2rem;
+        aspect-ratio: 1/1;
     }
 
-    /*=style the name error class=*/
-
-    /* add grid rows */
-    .name-error{
-        grid-template-rows: minmax(2.6875rem 5.75rem) 2.6875rem 2.6875rem 2.6875rem;
+    #metamask{
+        grid-column: 1/13;
+        grid-row: 1/2;
     }
 
-    /* positin the username error */
-    .name-error .username-error{
-        margin-top: 3.4rem;
+    /* styling and positoning the connect wallet option button */
+    #wallet-connect{
+        grid-column: 1/13;
+        grid-row: 2/3;
     }
 
-    /* positin the email icon inside the email input from the top */
-    .name-error .email{
-        position: absolute;
-        top: 6.12rem;
+    /* styling and positoning the coinbase wallet button */
+    #coinbase{
+        grid-column: 1/13;
+        grid-row: 3/4;
     }
 
-    /* positin the password icon inside the password input from the top */
-    .name-error .password{
-        position: absolute;
-        top: 9.8rem;
-    }
-
-    /* positin the cnfirm icon inside the confirm password input from the top */
-    .name-error .confirm{
-        position: absolute;
-        top: 13.42rem;
-    }
-
-    /*-## style the email error class##-*/
-
-    /* add grid rows */
-    .email-error{
-        grid-template-rows: 2.6875rem minmax(2.6875rem 5.75rem) 2.6875rem 2.6875rem;
-    }
-
-    /* position the email error message */
-    .email-error .email-error-message{
-        margin-top: 3.4rem;
-    }
-
-    /* positin the password icon inside the password input from the top */
-    .email-error .password{
-        position: absolute;
-        top: 9.6rem;
-    }
-
-    /* positin the cnfirm icon inside the confirm password input from the top */
-    .email-error .confirm{
-        position: absolute;
-        top: 13.24rem;
-    }
-
-    /*-##style the password error class-##*/
-
-    /* add grid rows*/
-    .password-error{
-        grid-template-rows: 2.6875rem 2.6875rem 2.6875rem minmax(2.6875rem 5.75rem);
-    }
-
-    /* position the password error message */
-    .password-error .password-confirmation-error,
-    .password-error .Password-error{
-        margin-top: 3.4rem;
-    }
-
-    /*-##style the all errors class-##*/
-
-    /* postion the password icon */
-    .all-errors .password{
-        top: 11.56rem;
-    }
-
-    /* position the confirm password icon */
-    .all-errors .confirm{
-        top: 15.2rem;
-    }
 
 
 /*=========================================*\
@@ -417,13 +258,13 @@ input[type = submit]{
               #Creat Acount
     \##################################*/
     /* add column gap to container */
-    #creat-acount{
+    #Connect-a-wallet{
         column-gap: var(--column-gap);
     }
 
     /* postion the image container */
     .image-container{
-        grid-column: 1/8;
+        grid-column: 1/7;
         grid-row: 1/2;
     }
 
@@ -435,8 +276,8 @@ input[type = submit]{
     }
 
     /* positon the creat acount form and give a bit of padding */
-    .creat-acount-form{
-        grid-column: 8/13;
+    .connect-wallet{
+        grid-column: 7/13;
         grid-row: 1/2;
         padding:0;
         align-self: center;
@@ -444,26 +285,15 @@ input[type = submit]{
     }
 
     /* give input a max width */
-    input{
-        max-width: 20.3125rem;
+    #metamask,
+    #wallet-connect,
+    #coinbase{
+        max-width: 20rem;
+        padding-block: 1.0875rem;
     }
-
-        /*##-active part-##*/
-
-    /* style all the error messages */
-    .username-error,
-    .email-error-message,
-    .password-confirmation-error,
-    .Password-error{
-        justify-self: flex-start;
-    }
-    
 }
 
 
-/*=========================================*\
-        #LARGE TABLET && LAPTOP STYLE
-\*=========================================*/
 @media screen and (min-width: 75rem){
     :root{
         /*==Typography==*/

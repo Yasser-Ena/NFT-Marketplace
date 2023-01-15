@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    
     <!-- 
         -Primary mata tags
      -->
@@ -13,78 +13,155 @@
      <title>NFT Marketplace | Marketplace</title>
      
      <!-- 
-        -Favicon
+        ----Favicon----
       -->
      <link rel="shortcut icon" href="./assets/Storefront.svg" type="image/x-icon">
 
-          <!-- 
-        -Link font familys from google fonts
+     <!-- 
+        ----Link font familys from google fonts----
       -->
 
       <link rel="preconnect" href="https://fonts.googleapis.com">
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
       <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Work+Sans:wght@400;600;700&display=swap" rel="stylesheet">
 
-
      <!-- 
-        -Custom css links
+        ----link stylesheet----
       -->
-      <link rel="stylesheet" href="./CSS/require.css">
-      <link rel="stylesheet" href="./CSS/marketplace-style.css">
+      <link rel="stylesheet" href="./CSS/base-style.css">
 </head>
 <body>
-
-   
+    
     <!-- 
-        -Preloder
+        ----Preloder----
      -->
      <div class="preloader ">
-      <div class="preloader-circle"></div>
-  </div>
-  
-
-  <!-- 
-      -navbar section
-   -->
-   <nav class="navgation">
-      <div class="logo">
-          <a href="./home.html">
-              <img src="./assets/Storefront.svg" alt="">
-              <h1 class="nft-marketpalce">
-                  NFT Marketplace
-              </h1>
-          </a>
-      </div>
-      <ul class="nave">
-          <li class="marketplace">
-              <a href="./marketplace.html">Marketplace</a>
-          </li>
-          <li class="rankings">
-              <a href="./rankings.html">Rankings</a>
-          </li>
-          <li class="wallet">
-              <a href="./Connect a wallet">Connect a wallet</a>
-          </li>
-          <li class="sign-up">
-              <a href="./creat-acount.html">
-                  <img src="./assets/User.svg" alt="User">
-                  <p class="singup-text">
-                      Sing Up
-                  </p>
-              </a>
-          </li>
-      </ul>
-
-      <button type="menu" id="menu">
-          <img src="./assets/Menu.svg" alt="Menu">
-      </button>
-   </nav>
+        <div class="preloader-circle"></div>
+    </div>
     
 
-       <!-- 
-        -Link script files
+    <!-- 
+        ----navbar section----
      -->
-     <script type="module" src="./js/require.js"></script>
-     
+     <nav class="navgation">
+        <div class="logo">
+            <a href="./home.html" class="items-flex">
+                <img src="../assets/Storefront.svg" alt="Marketplace">
+                <h1 class="nft-marketpalce">
+                    NFT Marketplace
+                </h1>
+            </a>
+        </div>
+        <ul class="nave">
+            <li class="marketplace">
+                <a href="marketplace.html">Marketplace</a>
+            </li>
+            <li class="rankings">
+                <a href="./rankings.html">Rankings</a>
+            </li>
+            <li class="wallet">
+                <a href="./Connect-a-wallet.html a wallet">Connect a wallet</a>
+            </li>
+            <li class="sign-up">
+                <a href="./creat-acount.html">
+                    <img src="../assets/User.svg" alt="User">
+                    <p class="singup-text">
+                        Sing Up
+                    </p>
+                </a>
+            </li>
+        </ul>
+
+        <button type="menu" id="menu">
+            <img src="../assets/Menu.svg" alt="Menu">
+        </button>
+     </nav>
+
+    
+    <!--                   -!->
+        ----Footer Info----
+    <--                     -->
+    
+    <footer id="footer-info"class="grid">
+        <div class="footer-headlin">
+
+            <div class="logo">
+                <a href="./html/home.html" class="items-flex">
+                    <img src="../assets/Storefront.svg" alt="Marketplace">
+                    <h1 class="nft-marketpalce">
+                        NFT Marketplace
+                    </h1>
+                </a>
+            </div>
+            
+            <div class="additional-info">
+                <p class="leading avatar-name">
+                    NFT marketplace UI created with Anima for Figma.
+                </p>
+            </div>
+
+        </div>
+        
+        <div class="Explore">
+            <h4>
+                Explore
+            </h4>
+            <ul class="pages">
+                <li>
+                    <a href="./marketplace.html">Marketplace</a>
+                </li>
+
+                <li>
+                    <a href="./rankings.html">Rankings</a>
+                </li>
+
+                <li>
+                    <a href="./Connect-a-wallet.html">Connect a wallet</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="cummunity">
+            <h4>
+                Join our community
+            </h4>
+            <ul class="social">
+                <li>
+                    <a href="#">
+                        <img src="../assets/DiscordLogo.svg" alt="Discord">
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <img src="../assets/YoutubeLogo.svg" alt="Youtube">
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <img src="../assets/TwitterLogo.svg" alt="Twitter">
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <img src="../assets/InstagramLogo.png" alt="Instagram">
+                    </a>
+                </li>
+            </ul>
+        </div>
+        
+        <div class="copyright">
+            <p class="avatar-name">
+                Ⓒ NFT Market. Use this template freely.
+            </p>
+        </div>
+    </footer>
+
+    <!-- 
+        ----Link script files----
+    -->
+     <script type="module" src="../js/require.js"></script>
 </body>
 </html>
