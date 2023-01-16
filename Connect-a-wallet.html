@@ -25,6 +25,12 @@
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
       <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Work+Sans:wght@400;600;700&display=swap" rel="stylesheet">
 
+      <!-- 
+        ----Import web3 provider library by cdn
+       -->
+       <script src="https://cdn.jsdelivr.net/npm/@walletconnect/web3-provider@1.7.1/dist/umd/index.min.js"></script>
+       <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+
      <!-- 
         ----link stylesheet----
       -->
@@ -78,9 +84,9 @@
         </button>
      </nav>
 
-    <!--                   -!->
+    <!--                       -!->
         ----Connect a wallet----
-    <--                     -->
+    <--                         -->
     
     <section id="Connect-a-wallet" class="grid">
         <!-- placeholder -->
@@ -111,14 +117,11 @@
                     <p class="metamask">Metamask</p>
                 </button>
 
-                <!-- Wallet Connect -->
-                <button type="button" id="wallet-connect" class="flex">
+                <!-- WalletConnect -->
+                <button type="button" id="walletconnect" class="flex">
                     <img src="./assets/wallet/WalletConnect.svg" >
-                    <p class="metamask">Wallet Connect</p>
+                    <p class="metamask">WalletConnect</p>
                 </button>
-
-                <!-- wallet connect form -->
-                <div class="wallet-connect-form"></div>
 
                 <!-- Coinbase -->
                 <button type="button" id="coinbase" class="flex">

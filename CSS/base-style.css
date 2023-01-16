@@ -268,14 +268,15 @@
         background-color: var(--Secondary-background);
         border-block: 2px solid var(--Text);
         z-index: 4;
+        overflow-y: hidden;
         animation-name: translate;
-        animation-duration: .1s;
-        animation-timing-function: ease-out ;
+        animation-duration: .3s;
+        animation-timing-function: ease-out;
     }
 
     @keyframes translate{
-        from{height: 230px;}
-        to{height: 248px;}
+        from{height: 0;}
+        to{height: 15.5rem;}
     }
     
     /*--nave links--*/

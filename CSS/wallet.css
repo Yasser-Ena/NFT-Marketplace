@@ -198,7 +198,7 @@ button p{
 
     /* styling and positoning the metamask wallet button */
     #metamask,
-    #wallet-connect,
+    #walletconnect,
     #coinbase{
         background-color: var(--Secondary-background);
         border: 1px solid var(--Call-to-action);
@@ -208,14 +208,14 @@ button p{
     }
 
     #metamask:is(:hover, :active),
-    #wallet-connect:is(:hover, :active),
+    #walletconnect:is(:hover, :active),
     #coinbase:is(:hover, :active){
         transform: scale(.99);
         box-shadow: 0 0 10px rgba(31, 27, 27, 0.829);
     }
 
     #metamask img,
-    #wallet-connect img,
+    #walletconnect img,
     #coinbase img{
         width: 2rem;
         aspect-ratio: 1/1;
@@ -227,7 +227,7 @@ button p{
     }
 
     /* styling and positoning the connect wallet option button */
-    #wallet-connect{
+    #walletconnect{
         grid-column: 1/13;
         grid-row: 2/3;
     }
@@ -286,7 +286,7 @@ button p{
 
     /* give input a max width */
     #metamask,
-    #wallet-connect,
+    #walletconnect,
     #coinbase{
         max-width: 20rem;
         padding-block: 1.0875rem;
