@@ -1,40 +1,675 @@
-/* @import url(base-style.css) */
 /*=========================================*\
               #CUSTOM PROPERTYS
 \*=========================================*/
-
-
+:root{
+    
+        /*==Colors==*/
+       
+           /*-Background-*/
+           --Primary-background:   #2B2B2B;
+           --Secondary-background: #3B3B3B;
+           --Action-timer-bg: rgba(59, 59, 59, 0.5);
+       
+           /*-Tex-*/
+           --Text:                   #ffffff;
+           --Footer-text:            #CCCCCC;
+           --Coption-and-Label-text: #858584;
+       
+           /*-Buttons-*/
+           --Call-to-action:         #A259FF;
+       
+           /*-NFT Highlight background-*/
+           --Liner-gradient: linear-gradient(180deg, rgba(162, 89, 255, 0) 0%, #A259FF 100%);
+       
+       
+       /*==Typograpgy==*/
+       
+           /*-Font family-*/
+           --Primary: 'Work Sans', sans-serif;
+           --Accesent: 'Space Mono', sans-serif;
+       
+           /*-Size-*/
+           --Main-header-fs:          1.75rem;
+           --Secondary-header-fs-h4: 1.375rem;
+           --Leading-fs:                 1rem;
+           --avatar-name:                1rem;
+           --Accesent-fs:             0.75rem;
+           
+           
+           /*-Weight-*/
+           --Primary-header-fw:     600;
+           --Secondary-header-fw:   700;
+           --Leading-w:             400;
+           
+           /*-Line height-*/
+           --line-height:              140%;
+       
+       /*==Paddings && Margins==*/
+       
+           /*-Padding-*/
+           --Sections-pad: 2.5rem 1.875rem;
+           --button-block-pad:  1.28125rem;
+           --card-padding: 1.25rem 1.25rem 1.5625rem 1.25rem;
+       
+           /*-Margin-*/
+           --margin-buttom-h:      0.625rem; 
+           --margin-buttom-main-h: 1.875rem;
+           --margin-of-25:        1.5625rem;
+           
+       /*==Gap==*/
+           --gap-of-30:  1.875rem;
+       
+       /*==Border radius==*/
+           --pic-radius: 1.25rem;
+}
+       
 
 /*=========================================*\
                     #RESET
 \*=========================================*/
+*, 
+*::after,
+*::before{
+    padding: 0;
+    margin:  0;
+    box-sizing: border-box;
+}
 
+li{
+    list-style: none;
+    color: inherit;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+input{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+   
+/*=========================================*\
+                #BASE STYLE
+\*=========================================*/
+body{
+    background-color: var(--Primary-background);
+    color: var(--Text);
+    overflow: hidden;
+    min-height: 100vh;
+    font-family: var(--Primary);
+}
 
 
 /*=========================================*\
-                 #BASE STYLE
+                   #TYPOGRAPHY
 \*=========================================*/
+    h2{
+        font-size: var(--Main-header-fs);
+        font-weight: var(--Primary-header-fw);
+        line-height: var(--line-height);
+    }
+    
+    p{
+        font-size: var(--Leading-fs);
+        font-weight: var(--Leading-w);
+        line-height: var(--line-height);
+    }
 
+    .avatar-name{
+        font-size: var(--avatar-name);
+        font-weight: var(--Leading-w);
+    }
+    
+    h4{
+        font-size: var(--Secondary-header-fs-h4);
+        font-weight: var(--Primary-header-fw);
+    }
 
+    /****Trending Collection****/
+    /* Number of additional NFTs */
+    .collection-card .fort-child .number{
+        font-family: var(--Accesent);
+        font-weight: var(--Secondary-header-fw);
+        font-size: var(--Leading-fs);
+    }
+
+    /****input and button****/
+    input{
+        font-family: var(--Primary);
+        font-size: var(--avatar-name);
+        font-weight: var(--Leading-w);
+    }
+
+    input::placeholder{
+        font-family: var(--Primary);
+        font-size: var(--avatar-name);
+        font-weight: var(--Leading-w);
+    }
+
+    button{
+        font-size: var(--Leading-fs);
+        font-weight: var(--Primary-header-fw);
+        font-family: var(--Primary);
+    }
 
 /*=========================================*\
-                #TYPOGRAPHY
+                  #REUSED
 \*=========================================*/
+/*****The grid for the sction containers*****/
+.grid{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
 
+/****The flex for align a text withe logo****/
+.items-flex{
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+
+/****The same padding on sections */
+section{
+    padding: var(--Sections-pad);
+}
 
 
 /*=========================================*\
                  #MOBILE SYLE
 \*=========================================*/
+/*##################################\
+        #Headling section
+\##################################*/
+/*give a bit of margin to the bottom main-headlin*/
+.main-headlin{
+        margin-bottom: var(--margin-buttom-main-h);
+}
+
+.main-heading{
+    margin-bottom: var(--margin-buttom-h);
+}
+
+/* style the search bar */
+form{
+    width: 100%;
+    position: relative;
+}
+
+#search-bar{
+    border: 1px solid var(--Secondary-background);
+    border-radius: var(--pic-radius);
+    outline: none;
+    padding: 1.21875rem 3.5rem 1.21875rem 1.25rem;
+    width: 100%;
+    color: var(--Footer-text);
+}
+
+#search-bar::placeholder{
+    color: var(--Coption-and-Label-text);
+}
+
+.MagnifyingGlass img{
+    width: 1.5rem;
+    aspect-ratio: 1/2;
+}
+
+.MagnifyingGlass{
+    position: absolute;
+    top: .4rem;
+    right: 1.25rem;
+}
+
+/*##################################\
+              #Tab bar
+\##################################*/
+#tabe-bar{
+    padding-block: .625rem 0;
+    border-top: 1px solid var(--Secondary-background);
+}
+
+.nfts-btn{
+    grid-column: 1/7;
+    grid-row: 1/2;
+}
+
+.collections-btn{
+    grid-column: 7/13;
+    grid-row: 1/2;
+}
+
+.nfts-btn,
+.collections-btn{
+    justify-self: center;
+    padding-block: var(--button-block-pad);
+    color: var(--Coption-and-Label-text);
+}
 
 
+/*##################################\
+          #NFT Cards Section
+\##################################*/
+#NFT-cards-section{
+    background-color: var(--Secondary-background);
+    border-bottom: 2px solid var(--Primary-background);
+}
 
-/*=========================================*\
-            #SMALL TABLET STYLE
-\*=========================================*/
+/* styling the nfts tab */
+#NFT-cards-section .nfts{
+    row-gap: var(--gap-of-30);
+    /* display: none; */
+}
 
+[class ^= card]{
+    grid-column: 1/13;
+    background-color: var(--Primary-background);
+    border-radius: var(--pic-radius);
+}
+
+.card6,
+.card7,
+.card8,
+.card9,
+.card10,
+.card11,
+.card12{
+    display: none;
+}
+
+
+/* styling card image */
+.image-wrapper{
+    overflow: hidden;
+    aspect-ratio: 4/3;
+}
+
+.placeholder{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 1.25rem 1.25rem 0 0;
+}
+
+/* styling card info */
+.nft-info{
+    padding: var(--card-padding);
+}
+
+.nft-info .artist-info{
+    margin-bottom: var(--margin-of-25);
+}
+
+.nft-info .artist-info h4{
+    margin-bottom: .3125rem;
+}
+
+.nft-info .artist-info .artist-avatar img{
+    width: 1.5rem;
+    aspect-ratio: 1/1;
+}
+
+.nft-info .artist-info .artist-avatar .avatar-name{
+    font-family: var(--Accesent);
+}
+
+.additional-info{
+    display: flex;
+    justify-content: space-between;
+}
+
+.additional-info .pric,
+.additional-info .highest-bid{
+    font-family: var(--Accesent);
+    font-size: var(--Accesent-fs);
+    color: var(--Coption-and-Label-text);
+    display: flex;
+    flex-direction: column;
+    row-gap: .5rem;
+}
+
+.additional-info .pric span,
+.additional-info .highest-bid span{
+    color: var(--Text);
+}
+
+/*==styling the collection tab==*/
+#NFT-cards-section .collections{
+    row-gap: var(--gap-of-30);
+    display: none;
+}
+
+.collections li{
+    grid-column: 1/13;
+}
+
+.collection-card{
+    gap: .9375rem;
+}
+
+.collection-card .first-child{
+    overflow: hidden;
+    grid-column: 1/13;
+    grid-row: 1/2;
+    justify-self: center;
+    border-radius: var(--pic-radius);
+}
+
+.collection-card .second-child{
+    grid-column: 1/5;
+    grid-row: 2/3;
+    justify-self: center;
+}
+
+.collection-card .third-child{
+    grid-column: 5/9;
+    grid-row: 2/3;
+    justify-self: center;
+}
+
+.collection-card .fort-child{
+    grid-column: 9/13;
+    grid-row: 2/3;
+    justify-self: center;
+    background-color: var(--Call-to-action);
+    border-radius: var(--pic-radius);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.collection-card .fort-child p{
+    font-family: var(--Accesent);
+    font-size: var(--Leading-fs);
+    font-weight: var(--Secondary-header-fw);
+}
+
+/* give a width to picturs */
+.collection-card .second-child,
+.collection-card .third-child,
+.collection-card .fort-child{
+    overflow: hidden;
+    width: 100%;
+    max-width: 5.9375rem;
+    margin-bottom: .9375rem;
+    border-radius: var(--pic-radius);
+}
+
+#fort-slider,
+#fifth-slider,
+#sexth-slider{
+    display: none;
+}
+
+/*add some propertys to collection info*/
+
+.collection-info  h4{
+    margin-bottom: var(--margin-buttom-h);
+}
+
+.collection-info .artist-card img{
+    width: 1.5rem;
+    aspect-ratio: 1/1;
+}
+
+
+/*==active part==*/
+.nfts-tab{
+    color: var(--Text);
+    border-bottom: 2px solid var(--Coption-and-Label-text);
+    width: 100%;
+}
 
 
 /*=========================================*\
         #LARGE TABLET && LAPTOP STYLE
 \*=========================================*/
+@media screen and (min-width: 52.125rem){
+    :root{
+        /*==Typograpgy==*/
+
+            /*-Size-*/
+            --Main-header-fs:       2.375rem;
+
+        /*==Paddings && Margins==*/
+        
+            /*-Padding-*/
+            --Sections-pad: 3.75rem 4.8125rem;
+            --card-padding: 1.25rem 1.875rem 1.5625rem 1.875rem;
+
+    }
+
+    /*##################################\
+                  #Tab bar
+    \##################################*/
+    /* add the number of cards after the tab */
+    .nfts-btn::after,
+    .collections-btn::after{
+        content: "";
+        font-family: var(--Accesent);
+        font-size: var(--avatar-name);
+        font-weight: var(--Leading-w);
+        background-color: var(--Secondary-background);
+        color: var(--Text);
+        padding: .3125rem .625rem;
+        border-radius: var(--pic-radius);
+        margin-left: 1rem;
+    }
+
+    .nfts-btn::after{
+        content: "302";
+    }
+
+    .collections-btn::after{
+        content: "67";
+    }
+
+    /*##################################\
+            #NFT Cards Section
+    \##################################*/
+    /* styling the nfts tab */
+    /* set the column gap */
+    #NFT-cards-section .nfts{
+        column-gap: var(--gap-of-30);
+    }
+
+    /* give the cards max width and center them */
+    [class ^= card]{
+        max-width: 20.3125rem;
+        justify-self: center;
+    }
+
+    /* displace some cards */
+    .card6,
+    .card7,
+    .card8{
+        display: block;
+    }
+
+    .card1,
+    .card3,
+    .card5,
+    .card7{
+        grid-column: 1/7;
+    }
+
+    .card2,
+    .card4,
+    .card6,
+    .card8{
+        grid-column: 7/13;
+    }
+
+    /* show mare from the place holder */
+    .image-wrapper{
+        aspect-ratio: 4/3.64;
+    }
+
+    .additional-info .pric span,
+    .additional-info .highest-bid span{
+        font-size: var(--avatar-name); 
+    }
+
+    /* style the collections tab */
+    #NFT-cards-section .collections{
+        column-gap: var(--gap-of-30);
+    }
+
+    /* postion the the fitst slider */
+    #first-slider{
+        grid-column: 1/7;
+        grid-row: 1/2;
+    }
+
+    /*--Position links and style them--*/
+    .collection-card .first-child img{
+        width: 100%;
+        max-width: 20.625rem;
+    }
+    
+    /* increase the width  to 5px */
+    .collection-card .second-child,
+    .collection-card .third-child,
+    .collection-card .fort-child{
+        width: 100%;
+        max-width: 6.25rem;
+    }
+
+    /* postion the the sliders and display them */
+    #second-slider{
+        grid-column: 7/13;
+        grid-row: 1/2;
+    }
+
+    #third-slider{
+        grid-column: 1/7;
+        grid-row: 2/3;
+    }
+
+    #fort-slider{
+        display: block;
+        grid-column: 7/13;
+        grid-row: 2/3;
+    }
+
+    
+    /* active part */
+    .nfts-tab::after{
+        background-color: var(--Coption-and-Label-text);
+    }
+
+}
+
+
+/*=========================================*\
+        #LARGE TABLET && LAPTOP STYLE
+\*=========================================*/
+@media screen and (min-width: 75rem){
+        :root{
+            /*==Typograpgy==*/
+                /*-size-*/
+                --Main-header-fs:      3.1875rem;
+                --Leading-fs:           1.375rem;
+                --Primary-header-fs:    2.375rem;
+                --Auction-header:      3.1875rem;
+                --Secondary-header-fs:   1.75rem;
+
+            /*==Padding && Margins*/
+                /*-Padding*/
+                --Sections-pad: 5rem 7.1875rem;
+        }
+
+    /*##################################\
+            #NFT Cards Section
+    \##################################*/
+    /* style nfs tab */
+    /* giv a max width */
+    [class ^= card]{
+        max-width: 20.625rem;
+    }
+
+     /* displace the raset of cards */
+     .card9,
+     .card10,
+     .card11,
+     .card12{
+         display: block;
+     }
+
+    .card1,
+    .card4,
+    .card7,
+    .card10{
+        grid-column: 1/5;
+    }
+
+    .card2,
+    .card5,
+    .card8,
+    .card11{
+        grid-column: 5/9;
+    }
+
+    .card3,
+    .card6,
+    .card9,
+    .card12{
+        grid-column: 9/13;
+    }
+
+    /* show mare from the place holder */
+   .image-wrapper{
+        aspect-ratio: 4/4;
+    }
+
+    /* styling the collections tab */
+        /* repositon the first slider */
+        #first-slider{
+            grid-column: 1/5;
+            grid-row: 1/2;
+        }
+        /* repositon the second slider */
+        #second-slider{
+            grid-column: 5/9;
+            grid-row: 1/2;
+        }
+    
+        /* repositon the third slider and display them */
+        #third-slider{
+            grid-column: 9/13;
+            grid-row: 1/2;
+        } 
+
+        /* repositon the fort slider and display them */
+        #fort-slider{
+            display: block;
+            grid-column: 1/5;
+            grid-row: 2/3;
+        } 
+
+        /* repositon the fifth slider and display them */
+        #fifth-slider{
+            display: block;
+            grid-column: 5/9;
+            grid-row: 2/3;
+        } 
+
+        /* repositon the fifth slider and display them */
+        #sexth-slider{
+            display: block;
+            grid-column: 9/13;
+            grid-row: 2/3;
+        } 
+
+}   

@@ -1,4 +1,4 @@
-// import {preloader ,loaded ,menu ,nave , sections ,toggleNav } from "./home.js";
+// import {preloader ,loaded ,menu ,nave ,toggleNav } from "./home.js";
 import * as utils from "./utils.js";
 
 /**

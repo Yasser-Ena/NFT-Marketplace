@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,45 +9,48 @@
     <!-- 
         -Primary mata tags
      -->
-     <meta name="title" content="NFT Marketplace">
-     <meta name="descption" content="Her you can by and sell NFTs">
-     <title>NFT Marketplace | Rankings</title>
-     
-     <!-- 
-        -Favicon
-      -->
-     <link rel="shortcut icon" href="./assets/Storefront.svg" type="image/x-icon">
+    <meta name="title" content="NFT Marketplace">
+    <meta name="descption" content="Her you can by and sell NFTs">
+    <title>NFT Marketplace | Rankings</title>
 
-     <!-- 
+    <!--
+         -Favicon 
+      -->
+    <link rel="shortcut icon" href="./assets/Storefront.svg" type="image/x-icon">
+ 
+    <!-- 
         -Link font familys from google fonts
       -->
 
-      <link rel="preconnect" href="https://fonts.googleapis.com">
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-      <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Work+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Work+Sans:wght@400;600;700&display=swap"
+        rel="stylesheet">
 
-     <!-- 
+    <!-- 
         -link stylesheet
       -->
-      <link rel="stylesheet" href="./CSS/require.css">
+    <link rel="stylesheet" href="./CSS/base-style.css">
+    <link rel="stylesheet" href="./CSS/rankings.css">
 </head>
-<body ">
 
-    <!-- 
-        -Preloder
+<body>
+     <!-- 
+        ----Preloder----
      -->
-    <div class="preloader ">
-        <div class="preloader-circle"></div>
+     <div class=" preloader ">
+        <div class=" preloader-circle">
     </div>
-    
+    </div>
+
 
     <!-- 
-        -navbar section
+        ----navbar section----
      -->
      <nav class="navgation">
         <div class="logo">
-            <a href="./home.html">
-                <img src="./assets/Storefront.svg" alt="">
+            <a href="./home.html" class="items-flex">
+                <img src="../assets/Storefront.svg" alt="Marketplace">
                 <h1 class="nft-marketpalce">
                     NFT Marketplace
                 </h1>
@@ -54,17 +58,17 @@
         </div>
         <ul class="nave">
             <li class="marketplace">
-                <a href="./marketplace.html">Marketplace</a>
+                <a href="marketplace.html">Marketplace</a>
             </li>
             <li class="rankings">
                 <a href="./rankings.html">Rankings</a>
             </li>
             <li class="wallet">
-                <a href="./Connect a wallet">Connect a wallet</a>
+                <a href="./Connect-a-wallet.html a wallet">Connect a wallet</a>
             </li>
             <li class="sign-up">
                 <a href="./creat-acount.html">
-                    <img src="./assets/User.svg" alt="User">
+                    <img src="./assets/home/User.svg" alt="User">
                     <p class="singup-text">
                         Sing Up
                     </p>
@@ -73,14 +77,1335 @@
         </ul>
 
         <button type="menu" id="menu">
-            <img src="./assets/Menu.svg" alt="Menu">
+            <img src="../assets/Menu.svg" alt="Menu">
         </button>
      </nav>
+
+    <!--               -!->
+        ----Headlin----
+    <--                 --> 
+    <section id="headlin-section">
+        <div class="main-headlin">
+            <h2 class="main-heading">
+                Top Creators
+            </h2>
+            <p class="leading">
+                Check out top ranking NFT artists on the NFT Marketplace.
+            </p>
+        </div>
+    </section>
+
+
+    <!--                -!->
+        ----Tabe bar----
+    <--                  -->
+    <section id="tabe-bar" class="grid">
+        <button class="one-day-btn nfts-tab">
+            1d
+        </button>
+
+        <button class="week-btn">
+            7d
+        </button>
+
+        <button class="month-btn">
+            30d
+        </button>
+
+        <button class="all-time-btn">
+            All Time
+        </button>
+    </section>
+
+    <!--                -!->
+        ----Rankings----
+    <--                  -->
+    <section id="rankings">
+        <ul class="rankings-row grid day-rancking">
+
+            <li class="rank-and-rtist flex">
+                <div class="artist-info items-flex">
+                    <p>
+                        Artist
+                    </p>
+                </div>
+                <ul class="stats flex">
+                    <li>
+                        <p>
+                            Change
+                        </p>
+                    </li>
+                    <li>
+                        <p>NFTs Sold</p>
+                    </li>
+                    <li>
+                        <p>Volume</p>
+                    </li>
+                </ul>
+            </li>
+
+            <li class="ranck1 flex">
+                <div class="artist-info items-flex">
+                    <img src="../assets/home/Artist-avatar1.svg" alt="Avatar 1" class="avatar-1">
+                    <h4>
+                        Keepitreal
+                    </h4>
+                </div>
+                <ul class="stats flex">
+                    <li>
+                        <p>+1.41%</p>
+                    </li>
+                    <li>
+                        <p>602</p>
+                    </li>
+                    <li>
+                        <p>12.4 ETH</p>
+                    </li>
+                </ul>
+            </li>
+
+            <li class="ranck2 flex">
+                
+                <div class="artist-info items-flex">
+
+                    <img src="../assets/home/Artist-avatar2.svg" alt="Avatar 2">
+                    <h4>
+                        DigiLab
+                    </h4>
+                </div>
+                <ul class="stats flex">
+                    <li>
+                        <p>+1.41%</p>
+                    </li>
+                    <li>
+                        <p>602</p>
+                    </li>
+                    <li>
+                        <p>12.4 ETH</p>
+                    </li>
+                </ul>
+            </li>
+
+            <li class="ranck3 flex">
+
+                <div class="artist-info items-flex">
+
+                    <img src="../assets/home/Artist-avatar3.svg" alt="Avatar 2">
+                    <h4>
+                        GravityOne
+                    </h4>
+                </div>
+
+                <ul class="stats flex">
+                    <li>
+                        <p>+1.41%</p>
+                    </li>
+                    <li>
+                        <p>602</p>
+                    </li>
+                    <li>
+                        <p>12.4 ETH</p>
+                    </li>
+                </ul>
+
+            </li>
+
+            <li class="ranck4 flex">
+
+                <div class="artist-info items-flex">
+
+                    <img src="../assets/home/Artist-avatar4.svg" alt="Avatar 4">
+                    <h4>
+                        Juanie
+                    </h4>
+                </div>
+
+                <ul class="stats flex">
+                    <li>
+                        <p>+1.41%</p>
+                    </li>
+                    <li>
+                        <p>602</p>
+                    </li>
+                    <li>
+                        <p>12.4 ETH</p>
+                    </li>
+                </ul>
+            </li>
+
+            <li class="ranck5 flex">
+                <div class="artist-info items-flex">
+
+                    <img src="../assets/home/Artist-avatar5.svg" alt="Avatar 5">
+                    <h4>
+                        BlueWhale
+                    </h4>
+                </div>
+
+                <ul class="stats flex">
+                    <li>
+                        <p>+1.41%</p>
+                    </li>
+                    <li>
+                        <p>602</p>
+                    </li>
+                    <li>
+                        <p>12.4 ETH</p>
+                    </li>
+                </ul>
+            </li>
+
+            <li class="ranck6 flex">
+                <div class="artist-info items-flex">
+                    <img src="../assets/home/Artist-avatar6.svg" alt="Avatar 6">
+                    <h4>
+                        Mr Fox
+                    </h4>
+                </div>
+
+                <ul class="stats flex">
+                    <li>
+                        <p>+1.41%</p>
+                    </li>
+                    <li>
+                        <p>602</p>
+                    </li>
+                    <li>
+                        <p>12.4 ETH</p>
+                    </li>
+                </ul>
+            </li>
+
+            <li class="ranck7 flex">
+                <div class="artist-info items-flex">
+                    <img src="../assets/home/Artist-avatar7.svg" alt="Avatar 7">
+                    <h4>
+                        Shroomie
+                    </h4>
+                </div>
+
+                <ul class="stats flex">
+                    <li>
+                        <p>+1.41%</p>
+                    </li>
+                    <li>
+                        <p>602</p>
+                    </li>
+                    <li>
+                        <p>12.4 ETH</p>
+                    </li>
+                </ul>
+            </li>
+
+            <li class="ranck8 flex">
+                <div class="artist-info items-flex">
+                    <img src="../assets/home/Artist-avatar8.svg" alt="Avatar 8">
+                    <h4>
+                        robotica
+                    </h4>
+                </div>
+
+                <ul class="stats flex">
+                    <li>
+                        <p>+1.41%</p>
+                    </li>
+                    <li>
+                        <p>602</p>
+                    </li>
+                    <li>
+                        <p>12.4 ETH</p>
+                    </li>
+                </ul>
+            </li>
+
+            <li class="ranck9 flex">
+                <div class="artist-info items-flex">
+                    <img src="../assets/home/Artist-avatar9.svg" alt="Avatar 9">
+                    <h4>
+                        RustyRobot
+                    </h4>
+                </div>
+
+                <ul class="stats flex">
+                    <li>
+                        <p>+1.41%</p>
+                    </li>
+                    <li>
+                        <p>602</p>
+                    </li>
+                    <li>
+                        <p>12.4 ETH</p>
+                    </li>
+                </ul>
+            </li>
+
+            <li class="ranck10 flex">
+                <div class="artist-info items-flex">
+                    <img src="../assets/home/Artist-avatar10.svg" alt="Avatar 10">
+                    <h4>
+                        animakid
+                    </h4>
+                </div>
+
+                <ul class="stats flex">
+                    <li>
+                        <p>+1.41%</p>
+                    </li>
+                    <li>
+                        <p>602</p>
+                    </li>
+                    <li>
+                        <p>12.4 ETH</p>
+                    </li>
+                </ul>
+            </li>
+
+            <li class="ranck11 flex">
+                <div class="artist-info items-flex">
+                    <img src="../assets/home/Artist-avatar11.svg" alt="Avatar 11">
+                    <h4>
+                        Dotgu
+                    </h4>
+                </div>
+
+                <ul class="stats flex">
+                    <li>
+                        <p>+1.41%</p>
+                    </li>
+                    <li>
+                        <p>602</p>
+                    </li>
+                    <li>
+                        <p>12.4 ETH</p>
+                    </li>
+                </ul>
+
+            </li>
+
+            <li class="ranck12 flex">
+                <div class="artist-info items-flex">
+                    <img src="../assets/home/Artist-avatar12.svg" alt="Avatar 12">
+                    <h4>
+                        Ghiblier
+                    </h4>
+                </div>
+
+                <ul class="stats flex">
+                    <li>
+                        <p>+1.41%</p>
+                    </li>
+                    <li>
+                        <p>602</p>
+                    </li>
+                    <li>
+                        <p>12.4 ETH</p>
+                    </li>
+                </ul>
+            </li>
+
+            <li class="ranck13 flex">
+
+                <div class="artist-info items-flex">
+
+                    <img src="../assets/home/Artist-avatar4.svg" alt="Avatar 4">
+                    <h4>
+                        Juanie
+                    </h4>
+                </div>
+
+                <ul class="stats flex">
+                    <li>
+                        <p>+1.41%</p>
+                    </li>
+                    <li>
+                        <p>602</p>
+                    </li>
+                    <li>
+                        <p>12.4 ETH</p>
+                    </li>
+                </ul>
+            </li>
+
+            <li class="ranck14 flex">
+                <div class="artist-info items-flex">
+
+                    <img src="../assets/home/Artist-avatar5.svg" alt="Avatar 5">
+                    <h4>
+                        BlueWhale
+                    </h4>
+                </div>
+
+                <ul class="stats flex">
+                    <li>
+                        <p>+1.41%</p>
+                    </li>
+                    <li>
+                        <p>602</p>
+                    </li>
+                    <li>
+                        <p>12.4 ETH</p>
+                    </li>
+                </ul>
+            </li>
+
+            <li class="ranck15 flex">
+                <div class="artist-info items-flex">
+                    <img src="../assets/home/Artist-avatar6.svg" alt="Avatar 6">
+                    <h4>
+                        Mr Fox
+                    </h4>
+                </div>
+
+                <ul class="stats flex">
+                    <li>
+                        <p>+1.41%</p>
+                    </li>
+                    <li>
+                        <p>602</p>
+                    </li>
+                    <li>
+                        <p>12.4 ETH</p>
+                    </li>
+                </ul>
+            </li>
+
+            <li class="ranck16 flex">
+                <div class="artist-info items-flex">
+                    <img src="../assets/home/Artist-avatar7.svg" alt="Avatar 7">
+                    <h4>
+                        Shroomie
+                    </h4>
+                </div>
+
+                <ul class="stats flex">
+                    <li>
+                        <p>+1.41%</p>
+                    </li>
+                    <li>
+                        <p>602</p>
+                    </li>
+                    <li>
+                        <p>12.4 ETH</p>
+                    </li>
+                </ul>
+            </li>
+
+            <li class="ranck17 flex">
+                <div class="artist-info items-flex">
+                    <img src="../assets/home/Artist-avatar8.svg" alt="Avatar 8">
+                    <h4>
+                        robotica
+                    </h4>
+                </div>
+
+                <ul class="stats flex">
+                    <li>
+                        <p>+1.41%</p>
+                    </li>
+                    <li>
+                        <p>602</p>
+                    </li>
+                    <li>
+                        <p>12.4 ETH</p>
+                    </li>
+                </ul>
+            </li>
+
+            <li class="ranck18 flex">
+                <div class="artist-info items-flex">
+                    <img src="../assets/home/Artist-avatar9.svg" alt="Avatar 9">
+                    <h4>
+                        RustyRobot
+                    </h4>
+                </div>
+
+                <ul class="stats flex">
+                    <li>
+                        <p>+1.41%</p>
+                    </li>
+                    <li>
+                        <p>602</p>
+                    </li>
+                    <li>
+                        <p>12.4 ETH</p>
+                    </li>
+                </ul>
+            </li>
+
+            <li class="ranck19 flex">
+                <div class="artist-info items-flex">
+                    <img src="../assets/home/Artist-avatar10.svg" alt="Avatar 10">
+                    <h4>
+                        animakid
+                    </h4>
+                </div>
+
+                <ul class="stats flex">
+                    <li>
+                        <p>+1.41%</p>
+                    </li>
+                    <li>
+                        <p>602</p>
+                    </li>
+                    <li>
+                        <p>12.4 ETH</p>
+                    </li>
+                </ul>
+            </li>
+
+            <li class="ranck20 flex">
+                <div class="artist-info items-flex">
+                    <img src="../assets/home/Artist-avatar11.svg" alt="Avatar 11">
+                    <h4>
+                        Dotgu
+                    </h4>
+                </div>
+
+                <ul class="stats flex">
+                    <li>
+                        <p>+1.41%</p>
+                    </li>
+                    <li>
+                        <p>602</p>
+                    </li>
+                    <li>
+                        <p>12.4 ETH</p>
+                    </li>
+                </ul>
+
+            </li>
+
+        </ul>
+
+        <ul class="rankings-row grid week-rancking">
+
+            <li class="rank-and-rtist flex">
+                <div class="artist-info items-flex">
+                    <p>
+                        Artist
+                    </p>
+                </div>
+                <ul class="stats flex">
+                    <li>
+                        <p>
+                            Change
+                        </p>
+                    </li>
+                    <li>
+                        <p>NFTs Sold</p>
+                    </li>
+                    <li>
+                        <p>Volume</p>
+                    </li>
+                </ul>
+            </li>
+
+            <li class="ranck1 flex">
+                <div class="artist-info items-flex">
+
+                    <img src="../assets/home/Artist-avatar5.svg" alt="Avatar 5">
+                    <h4>
+                        BlueWhale
+                    </h4>
+                </div>
+
+                <ul class="stats flex">
+                    <li>
+                        <p>+1.41%</p>
+                    </li>
+                    <li>
+                        <p>602</p>
+                    </li>
+                    <li>
+                        <p>12.4 ETH</p>
+                    </li>
+                </ul>
+            </li>
+
+            <li class="ranck2 flex">
+                <div class="artist-info items-flex">
+                    <img src="../assets/home/Artist-avatar6.svg" alt="Avatar 6">
+                    <h4>
+                        Mr Fox
+                    </h4>
+                </div>
+
+                <ul class="stats flex">
+                    <li>
+                        <p>+1.41%</p>
+                    </li>
+                    <li>
+                        <p>602</p>
+                    </li>
+                    <li>
+                        <p>12.4 ETH</p>
+                    </li>
+                </ul>
+            </li>
+
+            <li class="ranck3 flex">
+                <div class="artist-info items-flex">
+                    <img src="../assets/home/Artist-avatar7.svg" alt="Avatar 7">
+                    <h4>
+                        Shroomie
+                    </h4>
+                </div>
+
+                <ul class="stats flex">
+                    <li>
+                        <p>+1.41%</p>
+                    </li>
+                    <li>
+                        <p>602</p>
+                    </li>
+                    <li>
+                        <p>12.4 ETH</p>
+                    </li>
+                </ul>
+            </li>
+
+            <li class="ranck4 flex">
+                <div class="artist-info items-flex">
+                    <img src="../assets/home/Artist-avatar8.svg" alt="Avatar 8">
+                    <h4>
+                        robotica
+                    </h4>
+                </div>
+
+                <ul class="stats flex">
+                    <li>
+                        <p>+1.41%</p>
+                    </li>
+                    <li>
+                        <p>602</p>
+                    </li>
+                    <li>
+                        <p>12.4 ETH</p>
+                    </li>
+                </ul>
+            </li>
+
+            <li class="ranck5 flex">
+                <div class="artist-info items-flex">
+                    <img src="../assets/home/Artist-avatar1.svg" alt="Avatar 1" class="avatar-1">
+                    <h4>
+                        Keepitreal
+                    </h4>
+                </div>
+                <ul class="stats flex">
+                    <li>
+                        <p>+1.41%</p>
+                    </li>
+                    <li>
+                        <p>602</p>
+                    </li>
+                    <li>
+                        <p>12.4 ETH</p>
+                    </li>
+                </ul>
+            </li>
+
+            <li class="ranck6 flex">
+                
+                <div class="artist-info items-flex">
+
+                    <img src="../assets/home/Artist-avatar2.svg" alt="Avatar 2">
+                    <h4>
+                        DigiLab
+                    </h4>
+                </div>
+                <ul class="stats flex">
+                    <li>
+                        <p>+1.41%</p>
+                    </li>
+                    <li>
+                        <p>602</p>
+                    </li>
+                    <li>
+                        <p>12.4 ETH</p>
+                    </li>
+                </ul>
+            </li>
+
+            <li class="ranck7 flex">
+                <div class="artist-info items-flex">
+
+                    <img src="../assets/home/Artist-avatar5.svg" alt="Avatar 5">
+                    <h4>
+                        BlueWhale
+                    </h4>
+                </div>
+
+                <ul class="stats flex">
+                    <li>
+                        <p>+1.41%</p>
+                    </li>
+                    <li>
+                        <p>602</p>
+                    </li>
+                    <li>
+                        <p>12.4 ETH</p>
+                    </li>
+                </ul>
+            </li>
+
+            <li class="ranck8 flex">
+                <div class="artist-info items-flex">
+                    <img src="../assets/home/Artist-avatar6.svg" alt="Avatar 6">
+                    <h4>
+                        Mr Fox
+                    </h4>
+                </div>
+
+                <ul class="stats flex">
+                    <li>
+                        <p>+1.41%</p>
+                    </li>
+                    <li>
+                        <p>602</p>
+                    </li>
+                    <li>
+                        <p>12.4 ETH</p>
+                    </li>
+                </ul>
+            </li>
+
+            <li class="ranck9 flex">
+                <div class="artist-info items-flex">
+                    <img src="../assets/home/Artist-avatar7.svg" alt="Avatar 7">
+                    <h4>
+                        Shroomie
+                    </h4>
+                </div>
+
+                <ul class="stats flex">
+                    <li>
+                        <p>+1.41%</p>
+                    </li>
+                    <li>
+                        <p>602</p>
+                    </li>
+                    <li>
+                        <p>12.4 ETH</p>
+                    </li>
+                </ul>
+            </li>
+
+            <li class="ranck10 flex">
+                <div class="artist-info items-flex">
+                    <img src="../assets/home/Artist-avatar8.svg" alt="Avatar 8">
+                    <h4>
+                        robotica
+                    </h4>
+                </div>
+
+                <ul class="stats flex">
+                    <li>
+                        <p>+1.41%</p>
+                    </li>
+                    <li>
+                        <p>602</p>
+                    </li>
+                    <li>
+                        <p>12.4 ETH</p>
+                    </li>
+                </ul>
+            </li>
+
+            <li class="ranck11 flex">
+
+                <div class="artist-info items-flex">
+
+                    <img src="../assets/home/Artist-avatar3.svg" alt="Avatar 2">
+                    <h4>
+                        GravityOne
+                    </h4>
+                </div>
+
+                <ul class="stats flex">
+                    <li>
+                        <p>+1.41%</p>
+                    </li>
+                    <li>
+                        <p>602</p>
+                    </li>
+                    <li>
+                        <p>12.4 ETH</p>
+                    </li>
+                </ul>
+
+            </li>
+
+            <li class="ranck12 flex">
+
+                <div class="artist-info items-flex">
+
+                    <img src="../assets/home/Artist-avatar4.svg" alt="Avatar 4">
+                    <h4>
+                        Juanie
+                    </h4>
+                </div>
+
+                <ul class="stats flex">
+                    <li>
+                        <p>+1.41%</p>
+                    </li>
+                    <li>
+                        <p>602</p>
+                    </li>
+                    <li>
+                        <p>12.4 ETH</p>
+                    </li>
+                </ul>
+            </li>
+
+            <li class="ranck13 flex">
+                <div class="artist-info items-flex">
+                    <img src="../assets/home/Artist-avatar9.svg" alt="Avatar 9">
+                    <h4>
+                        RustyRobot
+                    </h4>
+                </div>
+
+                <ul class="stats flex">
+                    <li>
+                        <p>+1.41%</p>
+                    </li>
+                    <li>
+                        <p>602</p>
+                    </li>
+                    <li>
+                        <p>12.4 ETH</p>
+                    </li>
+                </ul>
+            </li>
+
+            <li class="ranck14 flex">
+                <div class="artist-info items-flex">
+                    <img src="../assets/home/Artist-avatar10.svg" alt="Avatar 10">
+                    <h4>
+                        animakid
+                    </h4>
+                </div>
+
+                <ul class="stats flex">
+                    <li>
+                        <p>+1.41%</p>
+                    </li>
+                    <li>
+                        <p>602</p>
+                    </li>
+                    <li>
+                        <p>12.4 ETH</p>
+                    </li>
+                </ul>
+            </li>
+
+            <li class="ranck15 flex">
+                <div class="artist-info items-flex">
+                    <img src="../assets/home/Artist-avatar11.svg" alt="Avatar 11">
+                    <h4>
+                        Dotgu
+                    </h4>
+                </div>
+
+                <ul class="stats flex">
+                    <li>
+                        <p>+1.41%</p>
+                    </li>
+                    <li>
+                        <p>602</p>
+                    </li>
+                    <li>
+                        <p>12.4 ETH</p>
+                    </li>
+                </ul>
+
+            </li>
+
+            <li class="ranck16 flex">
+                <div class="artist-info items-flex">
+                    <img src="../assets/home/Artist-avatar12.svg" alt="Avatar 12">
+                    <h4>
+                        Ghiblier
+                    </h4>
+                </div>
+
+                <ul class="stats flex">
+                    <li>
+                        <p>+1.41%</p>
+                    </li>
+                    <li>
+                        <p>602</p>
+                    </li>
+                    <li>
+                        <p>12.4 ETH</p>
+                    </li>
+                </ul>
+            </li>
+
+            <li class="ranck17 flex">
+
+                <div class="artist-info items-flex">
+
+                    <img src="../assets/home/Artist-avatar4.svg" alt="Avatar 4">
+                    <h4>
+                        Juanie
+                    </h4>
+                </div>
+
+                <ul class="stats flex">
+                    <li>
+                        <p>+1.41%</p>
+                    </li>
+                    <li>
+                        <p>602</p>
+                    </li>
+                    <li>
+                        <p>12.4 ETH</p>
+                    </li>
+                </ul>
+            </li>
+         </ul>
+         
+         <ul class="rankings-row grid month-rancking">
+
+            <li class="rank-and-rtist flex">
+                <div class="artist-info items-flex">
+                    <p>
+                        Artist
+                    </p>
+                </div>
+                <ul class="stats flex">
+                    <li>
+                        <p>
+                            Change
+                        </p>
+                    </li>
+                    <li>
+                        <p>NFTs Sold</p>
+                    </li>
+                    <li>
+                        <p>Volume</p>
+                    </li>
+                </ul>
+            </li>
+
+            <li class="ranck1 flex">
+                <div class="artist-info items-flex">
+                    <img src="../assets/home/Artist-avatar11.svg" alt="Avatar 11">
+                    <h4>
+                        Dotgu
+                    </h4>
+                </div>
+
+                <ul class="stats flex">
+                    <li>
+                        <p>+1.41%</p>
+                    </li>
+                    <li>
+                        <p>602</p>
+                    </li>
+                    <li>
+                        <p>12.4 ETH</p>
+                    </li>
+                </ul>
+
+            </li>
+
+            <li class="ranck2 flex">
+                <div class="artist-info items-flex">
+                    <img src="../assets/home/Artist-avatar12.svg" alt="Avatar 12">
+                    <h4>
+                        Ghiblier
+                    </h4>
+                </div>
+
+                <ul class="stats flex">
+                    <li>
+                        <p>+1.41%</p>
+                    </li>
+                    <li>
+                        <p>602</p>
+                    </li>
+                    <li>
+                        <p>12.4 ETH</p>
+                    </li>
+                </ul>
+            </li>
+
+            <li class="ranck3 flex">
+
+                <div class="artist-info items-flex">
+
+                    <img src="../assets/home/Artist-avatar4.svg" alt="Avatar 4">
+                    <h4>
+                        Juanie
+                    </h4>
+                </div>
+
+                <ul class="stats flex">
+                    <li>
+                        <p>+1.41%</p>
+                    </li>
+                    <li>
+                        <p>602</p>
+                    </li>
+                    <li>
+                        <p>12.4 ETH</p>
+                    </li>
+                </ul>
+            </li>
+
+            <li class="ranck4 flex">
+
+                <div class="artist-info items-flex">
+
+                    <img src="../assets/home/Artist-avatar3.svg" alt="Avatar 2">
+                    <h4>
+                        GravityOne
+                    </h4>
+                </div>
+
+                <ul class="stats flex">
+                    <li>
+                        <p>+1.41%</p>
+                    </li>
+                    <li>
+                        <p>602</p>
+                    </li>
+                    <li>
+                        <p>12.4 ETH</p>
+                    </li>
+                </ul>
+
+            </li>
+
+            <li class="ranck5 flex">
+
+                <div class="artist-info items-flex">
+
+                    <img src="../assets/home/Artist-avatar4.svg" alt="Avatar 4">
+                    <h4>
+                        Juanie
+                    </h4>
+                </div>
+
+                <ul class="stats flex">
+                    <li>
+                        <p>+1.41%</p>
+                    </li>
+                    <li>
+                        <p>602</p>
+                    </li>
+                    <li>
+                        <p>12.4 ETH</p>
+                    </li>
+                </ul>
+            </li>
+
+            <li class="ranck6 flex">
+                <div class="artist-info items-flex">
+
+                    <img src="../assets/home/Artist-avatar5.svg" alt="Avatar 5">
+                    <h4>
+                        BlueWhale
+                    </h4>
+                </div>
+
+                <ul class="stats flex">
+                    <li>
+                        <p>+1.41%</p>
+                    </li>
+                    <li>
+                        <p>602</p>
+                    </li>
+                    <li>
+                        <p>12.4 ETH</p>
+                    </li>
+                </ul>
+            </li>
+
+            <li class="ranck7 flex">
+                <div class="artist-info items-flex">
+                    <img src="../assets/home/Artist-avatar6.svg" alt="Avatar 6">
+                    <h4>
+                        Mr Fox
+                    </h4>
+                </div>
+
+                <ul class="stats flex">
+                    <li>
+                        <p>+1.41%</p>
+                    </li>
+                    <li>
+                        <p>602</p>
+                    </li>
+                    <li>
+                        <p>12.4 ETH</p>
+                    </li>
+                </ul>
+            </li>
+
+            <li class="ranck8 flex">
+                <div class="artist-info items-flex">
+                    <img src="../assets/home/Artist-avatar1.svg" alt="Avatar 1" class="avatar-1">
+                    <h4>
+                        Keepitreal
+                    </h4>
+                </div>
+                <ul class="stats flex">
+                    <li>
+                        <p>+1.41%</p>
+                    </li>
+                    <li>
+                        <p>602</p>
+                    </li>
+                    <li>
+                        <p>12.4 ETH</p>
+                    </li>
+                </ul>
+            </li>
+
+            <li class="ranck9 flex">
+                
+                <div class="artist-info items-flex">
+
+                    <img src="../assets/home/Artist-avatar2.svg" alt="Avatar 2">
+                    <h4>
+                        DigiLab
+                    </h4>
+                </div>
+                <ul class="stats flex">
+                    <li>
+                        <p>+1.41%</p>
+                    </li>
+                    <li>
+                        <p>602</p>
+                    </li>
+                    <li>
+                        <p>12.4 ETH</p>
+                    </li>
+                </ul>
+            </li>
+
+
+            <li class="ranck10 flex">
+                <div class="artist-info items-flex">
+                    <img src="../assets/home/Artist-avatar7.svg" alt="Avatar 7">
+                    <h4>
+                        Shroomie
+                    </h4>
+                </div>
+
+                <ul class="stats flex">
+                    <li>
+                        <p>+1.41%</p>
+                    </li>
+                    <li>
+                        <p>602</p>
+                    </li>
+                    <li>
+                        <p>12.4 ETH</p>
+                    </li>
+                </ul>
+            </li>
+
+            <li class="ranck11 flex">
+                <div class="artist-info items-flex">
+                    <img src="../assets/home/Artist-avatar8.svg" alt="Avatar 8">
+                    <h4>
+                        robotica
+                    </h4>
+                </div>
+
+                <ul class="stats flex">
+                    <li>
+                        <p>+1.41%</p>
+                    </li>
+                    <li>
+                        <p>602</p>
+                    </li>
+                    <li>
+                        <p>12.4 ETH</p>
+                    </li>
+                </ul>
+            </li>
+
+            <li class="ranck12 flex">
+                <div class="artist-info items-flex">
+                    <img src="../assets/home/Artist-avatar9.svg" alt="Avatar 9">
+                    <h4>
+                        RustyRobot
+                    </h4>
+                </div>
+
+                <ul class="stats flex">
+                    <li>
+                        <p>+1.41%</p>
+                    </li>
+                    <li>
+                        <p>602</p>
+                    </li>
+                    <li>
+                        <p>12.4 ETH</p>
+                    </li>
+                </ul>
+            </li>
+
+            <li class="ranck13 flex">
+                <div class="artist-info items-flex">
+                    <img src="../assets/home/Artist-avatar10.svg" alt="Avatar 10">
+                    <h4>
+                        animakid
+                    </h4>
+                </div>
+
+                <ul class="stats flex">
+                    <li>
+                        <p>+1.41%</p>
+                    </li>
+                    <li>
+                        <p>602</p>
+                    </li>
+                    <li>
+                        <p>12.4 ETH</p>
+                    </li>
+                </ul>
+            </li>
+
+            <li class="ranck14 flex">
+                <div class="artist-info items-flex">
+
+                    <img src="../assets/home/Artist-avatar5.svg" alt="Avatar 5">
+                    <h4>
+                        BlueWhale
+                    </h4>
+                </div>
+
+                <ul class="stats flex">
+                    <li>
+                        <p>+1.41%</p>
+                    </li>
+                    <li>
+                        <p>602</p>
+                    </li>
+                    <li>
+                        <p>12.4 ETH</p>
+                    </li>
+                </ul>
+            </li>
+
+            <li class="ranck15 flex">
+                <div class="artist-info items-flex">
+                    <img src="../assets/home/Artist-avatar6.svg" alt="Avatar 6">
+                    <h4>
+                        Mr Fox
+                    </h4>
+                </div>
+
+                <ul class="stats flex">
+                    <li>
+                        <p>+1.41%</p>
+                    </li>
+                    <li>
+                        <p>602</p>
+                    </li>
+                    <li>
+                        <p>12.4 ETH</p>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+
+    </section>
+
+    <!--                   -!->
+        ----Footer Info----
+    <--                     -->
+
+    <footer id="footer-info"class="grid">
+        <div class="footer-headlin">
+
+            <div class="logo">
+                <a href="./home.html" class="items-flex">
+                    <img src="../assets/Storefront.svg" alt="Marketplace">
+                    <h1 class="nft-marketpalce">
+                        NFT Marketplace
+                    </h1>
+                </a>
+            </div>
+            
+            <div class="additional-info">
+                <p class="leading avatar-name">
+                    NFT marketplace UI created with Anima for Figma.
+                </p>
+            </div>
+
+        </div>
+        
+        <div class="Explore">
+            <h4>
+                Explore
+            </h4>
+            <ul class="pages">
+                <li>
+                    <a href="./marketplace.html">Marketplace</a>
+                </li>
+
+                <li>
+                    <a href="./rankings.html">Rankings</a>
+                </li>
+
+                <li>
+                    <a href="./Connect-a-wallet.html">Connect a wallet</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="cummunity">
+            <h4>
+                Join our community
+            </h4>
+            <ul class="social">
+                <li>
+                    <a href="#">
+                        <img src="../assets/DiscordLogo.svg" alt="Discord">
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <img src="../assets/YoutubeLogo.svg" alt="Youtube">
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <img src="../assets/TwitterLogo.svg" alt="Twitter">
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <img src="./assets//InstagramLogo.svg" alt="Instagram">
+                    </a>
+                </li>
+            </ul>
+        </div>
+        
+        <div class="copyright">
+            <p class="avatar-name">
+                Ⓒ NFT Market. Use this template freely.
+            </p>
+        </div>
+    </footer>
 
 
     <!-- 
         -Link script files
      -->
-     <script type="module" src="./require.js"></script>
+    <script type="module" src="./js/rankings.js"></script>
 </body>
-</html> 
+
+</html>

@@ -941,7 +941,7 @@ section{
     .frame li:is(:hover, :active){
         box-shadow: 0 0 10px rgba(31, 27, 27, 0.829);
         transform: scale(1.03);
-    }
+    } 
 
     /*=style the first part of the card=*/
     /* show the specific parte of the image */
@@ -1352,7 +1352,7 @@ section{
         aspect-ratio: 1/1;
     }
 
-     /*##################################\
+    /*##################################\
                     #Footer
     \##################################*/
     #footer-info{
