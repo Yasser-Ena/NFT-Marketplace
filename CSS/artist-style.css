@@ -359,7 +359,7 @@ h5{
         row-gap: var(--gap-of-30);
 }
 
- #nft-cards-and-tabs .nfts-cards li{
+#nft-cards-and-tabs .nfts-cards li{
         grid-column: 1/13;
         background-color: var(--Primary-background);
         border-radius: var(--pic-radius);

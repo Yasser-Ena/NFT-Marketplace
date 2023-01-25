@@ -8,22 +8,553 @@
     <!-- 
         -Primary mata tags
      -->
-     <meta name="title" content="NFT Marketplace">
+     <meta name="title" content="NFT Page">
      <meta name="descption" content="Her you can by and sell NFTs">
      <title>NFT Marketplace | NFT Page</title>
      
      <!-- 
-        -Favicon
+        ----Favicon----
       -->
      <link rel="shortcut icon" href="./assets/Storefront.svg" type="image/x-icon">
 
      <!-- 
-        -Custom css links
+        ----Link font familys from google fonts----
       -->
-      <link rel="stylesheet" href="./CSS/require.css">
+
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Work+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+
+     <!-- 
+        ----link stylesheet----
+      -->
+      <link rel="stylesheet" href="./CSS/base-style.css">
       <link rel="stylesheet" href="./CSS/NFT-page-style.css">
 </head>
 <body>
+
+    <!-- 
+        ----Preloder----
+     -->
+     <div class="preloader ">
+        <div class="preloader-circle"></div>
+    </div>
     
+
+    <!-- 
+        ----navbar section----
+     -->
+     <nav class="navgation">
+        <div class="logo">
+            <a href="./home.html" class="items-flex">
+                <img src="../assets/Storefront.svg" alt="Marketplace">
+                <h1 class="nft-marketpalce">
+                    NFT Marketplace
+                </h1>
+            </a>
+        </div>
+        <ul class="nave">
+            <li class="marketplace">
+                <a href="marketplace.html">Marketplace</a>
+            </li>
+            <li class="rankings">
+                <a href="./rankings.html">Rankings</a>
+            </li>
+            <li class="wallet">
+                <a href="./Connect-a-wallet.html a wallet">Connect a wallet</a>
+            </li>
+            <li class="sign-up">
+                <a href="./creat-acount.html">
+                    <img src="./assets/home/User.svg" alt="User">
+                    <p class="singup-text">
+                        Sing Up
+                    </p>
+                </a>
+            </li>
+        </ul>
+
+        <button type="menu" id="menu">
+            <img src="../assets/Menu.svg" alt="Menu">
+        </button>
+   </nav>
+
+   <!--                   -!->
+        ----Artist Info----
+   <--                     -->
+   <section id="artist-info-section">
+      <div class="cover">
+         <img src="./assets/nft-page/Image PlaceHolder.png" class="placeholder">
+      </div>
+
+      <div class="artist-information grid">
+         <div class="headlin">
+            <h2>
+               The Animakid
+            </h2>
+            <p>
+               Minted on Sep 30, 2022
+            </p>
+         </div>
+
+         <div class="auction-timer">
+            <div class="timer">
+               <p class="leading">
+                  Auction ends in:
+               </p>
+
+               <ul class="time">
+                <li>
+                    <h3 class="hours">00</h3>
+                    <p>Hours</p>
+                </li>
+                <li>
+                    <h3>:</h3>
+                </li>
+                <li>
+                    <h3 class="minutes">00</h3>
+                    <p>Minutes</p>
+                </li>
+                <li>
+                    <h3>:</h3>
+                </li>
+                <li>
+                    <h3 class="seconds">00</h3>
+                    <p>Seconds</p>
+                </li>
+               </ul>
+            </div>
+
+            <button class="place-bid">
+               <p class="avatar-name">Place Bid</p>
+            </button>
+         </div>
+
+         <div class="auction-soled">
+            <h2>
+                It's soled!
+            </h2>
+         </div>
+
+         <div class="creator">
+            <h5>
+               Created By
+            </h5>
+
+            <a href="./artist-page.html" class="artist-avatar items-flex">
+               <img src="./assets/home/Artist-avatar10.svg">
+               <p>
+                  Animakid
+               </p>
+            </a>
+         </div>
+
+         <div class="discreption">
+            <h5>
+               Description
+            </h5>
+
+            <P>
+               The Animakid <br>
+               is a collection of 10,000 unique NFTs on the Ethereum blockchain,
+               <br>
+               <br>
+               There are all sorts of beings in the NFT Universe.
+                The most advanced and friendly of the bunch are Animakid.
+               <br>
+               <br>
+               They live in a metal space machines, high up in the sky and
+                only have one foot on Earth. <br>
+                 These Animakid are a peaceful
+                 race, but they have been at war with a group of invaders for
+                  many generations. The invaders are called Upside-Downs, because
+                   of their inverted bodies that live on the ground, yet do not know
+                    any other way to be. Upside-Downs believe that they will be able
+                     to win this war if they could only get an eye into Orbitian territory,
+                      so they've taken to make human beings their target.
+            </P>
+         </div>
+
+         <div class="detailes">
+            <h5>
+               Details
+            </h5>
+            <div class="artist-avatar items-flex first">
+                <img src="./assets/artist-page/Globe.svg">
+                <p>
+                   View on Etherscan
+                </p>
+            </div>
+
+            <div class="artist-avatar items-flex second">
+                <img src="./assets/artist-page/Globe.svg">
+                <p>
+                   View Original
+                </p>
+            </div>
+         </div>
+
+         <div class="tags">
+            <h5>
+                Tags
+            </h5>
+
+            <div class="tag">
+                <a href="./marketplace.html">
+                    <p class="avatar-name">
+                        ANIMATION
+                    </p>
+                </a>
+                <a href="./marketplace.html">
+                    <p class="avatar-name">
+                        ILLUSTRATION
+                    </p>
+                </a>
+                <a href="./marketplace.html">
+                    <p class="avatar-name">
+                        MOON
+                    </p>
+                </a>
+                <a href="./marketplace.html">
+                    <p class="avatar-name">
+                        MOON
+                    </p>
+                </a>
+            </div>
+         </div>
+      </div>
+   </section>
+
+    <!--                                -!->
+        ----More NFTs From The Artist----
+    <--                                  -->
+    <section id="more-nfts" class="grid">
+        <div class="headling">
+            <h3>
+                More from this artist
+            </h3>
+        </div>
+
+        <a href="./artist-page.html" class="go-to-artist-page items-flex">
+            <img src="./assets/nft-page/ArrowRight.png">
+            <p class="avatar-name">
+                Go To Artist Page
+            </p>
+        </a>
+
+        <ul class="nfts-cards grid">
+            <li class="card1">
+                <div class="image-wrapper">
+                    <img src="./assets/nft-page/Image-placeholder-fox.png">
+                </div>
+
+                <div class="nft-info">
+                    <div class="artist-info">
+                        <h4>Foxy Life</h4>
+                        <div class="artist-avatar items-flex">
+                            <img src="./assets/home/Artist-avatar10.svg">
+                            <p class="avatar-name">
+                                Animakid
+                            </p>
+                        </div>
+                    </div>
+                    <div class=" additional-info flex">
+                        <p class="pric">
+                            Pric<span>1.63 ETH</span>
+                        </p>
+                        <p class="highest-bid">
+                            Highest Bid<span>0.33 wETH</span>
+                        </p>
+                    </div>
+                </div>
+            </li>
+
+            <li class="card2">
+                <div class="image-wrapper">
+                    <img src="./assets/nft-page/Image-placeholder-cat.png">
+                </div>
+                <div class="nft-info">
+                    <div class="artist-info">
+                        <h4>Cat from future</h4>
+                        <div class="artist-avatar items-flex">
+                            <img src="./assets/home/Artist-avatar10.svg">
+                            <p class="avatar-name">
+                                Animakid
+                            </p>
+                        </div>
+                    </div>
+                    <div class=" additional-info flex">
+                        <p class="pric">
+                            Pric<span>1.63 ETH</span>
+                        </p>
+                        <p class="highest-bid">
+                            Highest Bid<span>0.33 wETH</span>
+                        </p>
+                    </div>
+                </div>
+            </li>
+
+            <li class="card3">
+                <div class="image-wrapper">
+                    <img src="./assets/nft-page/Image-placeholder-dog.png">
+                </div>
+                <div class="nft-info">
+                    <div class="artist-info">
+                        <h4>Psycho Dog</h4>
+                        <div class="artist-avatar items-flex">
+                            <img src="./assets/home/Artist-avatar10.svg">
+                            <p class="avatar-name">
+                                Animakid
+                            </p>
+                        </div>
+                    </div>
+                    <div class=" additional-info flex">
+                        <p class="pric">
+                            Pric<span>1.63 ETH</span>
+                        </p>
+                        <p class="highest-bid">
+                            Highest Bid<span>0.33 wETH</span>
+                        </p>
+                    </div>
+                </div>
+            </li>
+
+            <li class="card4">
+                <div class="image-wrapper">
+                    <img src="./assets/nft-page/Image-placeholder-bear.png">
+                </div>
+                <div class="nft-info">
+                    <div class="artist-info">
+                        <h4>Designer Bear</h4>
+                        <div class="artist-avatar items-flex">
+                            <img src="./assets/home/Artist-avatar10.svg">
+                            <p class="avatar-name">
+                                Animakid
+                            </p>
+                        </div>
+                    </div>
+                    <div class=" additional-info flex">
+                        <p class="pric">
+                            Pric<span>1.63 ETH</span>
+                        </p>
+                        <p class="highest-bid">
+                            Highest Bid<span>0.33 wETH</span>
+                        </p>
+                    </div>
+                </div>
+            </li>
+
+            <li class="card5">
+                <div class="image-wrapper">
+                    <img src="./assets/nft-page/Image-placeholder-robot1.png">
+                </div>
+                <div class="nft-info">
+                    <div class="artist-info">
+                        <h4>Dancing Robot 0375</h4>
+                        <div class="artist-avatar items-flex">
+                            <img src="./assets/home/Artist-avatar10.svg">
+                            <p class="avatar-name">
+                                Animakid
+                            </p>
+                        </div>
+                    </div>
+                    <div class=" additional-info flex">
+                        <p class="pric">
+                            Pric<span>1.63 ETH</span>
+                        </p>
+                        <p class="highest-bid">
+                            Highest Bid<span>0.33 wETH</span>
+                        </p>
+                    </div>
+                </div>
+            </li>
+
+            <li class="card6">
+                <div class="image-wrapper">
+                    <img src="./assets/nft-page/Image-placeholder-robot2.png">
+                </div>
+                <div class="nft-info">
+                    <div class="artist-info">
+                        <h4>Dancing Robot 0343</h4>
+                        <div class="artist-avatar items-flex">
+                            <img src="./assets/home/Artist-avatar10.svg">
+                            <p class="avatar-name">
+                                Animakid
+                            </p>
+                        </div>
+                    </div>
+                    <div class=" additional-info flex">
+                        <p class="pric">
+                            Pric<span>1.63 ETH</span>
+                        </p>
+                        <p class="highest-bid">
+                            Highest Bid<span>0.33 wETH</span>
+                        </p>
+                    </div>
+                </div>
+            </li>
+
+            <li class="card7">
+                <div class="image-wrapper">
+                    <img src="./assets/nft-page/Image-placeholder-robot3.png">
+                </div>
+                <div class="nft-info">
+                    <div class="artist-info">
+                        <h4>Dancing Robot 037</h4>
+                        <div class="artist-avatar items-flex">
+                            <img src="./assets/home/Artist-avatar10.svg">
+                            <p class="avatar-name">
+                                Animakid
+                            </p>
+                        </div>
+                    </div>
+                    <div class=" additional-info flex">
+                        <p class="pric">
+                            Pric<span>1.63 ETH</span>
+                        </p>
+                        <p class="highest-bid">
+                            Highest Bid<span>0.33 wETH</span>
+                        </p>
+                    </div>
+                </div>
+            </li>
+
+            <li class="card8">
+                <div class="image-wrapper">
+                    <img src="./assets/nft-page/Image-placeholder-robot4.png">
+                </div>
+                <div class="nft-info">
+                    <div class="artist-info">
+                        <h4>Dancing Robot 0987</h4>
+                        <div class="artist-avatar items-flex">
+                            <img src="./assets/home/Artist-avatar10.svg">
+                            <p class="avatar-name">
+                                Animakid
+                            </p>
+                        </div>
+                    </div>
+                    <div class=" additional-info flex">
+                        <p class="pric">
+                            Pric<span>1.63 ETH</span>
+                        </p>
+                        <p class="highest-bid">
+                            Highest Bid<span>0.33 wETH</span>
+                        </p>
+                    </div>
+                </div>
+            </li>
+
+            <li class="card9">
+                <div class="image-wrapper">
+                    <img src="./assets/nft-page/Image-placeholder-robot5.png">
+                </div>
+                <div class="nft-info">
+                    <div class="artist-info">
+                        <h4>Dancing Robot 0373</h4>
+                        <div class="artist-avatar items-flex">
+                            <img src="./assets/home/Artist-avatar10.svg">
+                            <p class="avatar-name">
+                                Animakid
+                            </p>
+                        </div>
+                    </div>
+                    <div class=" additional-info flex">
+                        <p class="pric">
+                            Pric<span>1.63 ETH</span>
+                        </p>
+                        <p class="highest-bid">
+                            Highest Bid<span>0.33 wETH</span>
+                        </p>
+                    </div>
+                </div>
+            </li>
+        </ul>
+
+    </section>
+
+    <!--                   -!->
+        ----Footer Info----
+    <--                     -->
+    
+    <footer id="footer-info"class="grid">
+      <div class="footer-headlin">
+
+          <div class="logo">
+              <a href="./home.html" class="items-flex">
+                  <img src="../assets/Storefront.svg" alt="Marketplace">
+                  <h1 class="nft-marketpalce">
+                      NFT Marketplace
+                  </h1>
+              </a>
+          </div>
+          
+          <div class=" additional-info flex">
+              <p class="leading avatar-name">
+                  NFT marketplace UI created with Anima for Figma.
+              </p>
+          </div>
+
+      </div>
+      
+      <div class="Explore">
+          <h4>
+              Explore
+          </h4>
+          <ul class="pages">
+              <li>
+                  <a href="./marketplace.html">Marketplace</a>
+              </li>
+
+              <li>
+                  <a href="./rankings.html">Rankings</a>
+              </li>
+
+              <li>
+                  <a href="./Connect-a-wallet.html">Connect a wallet</a>
+              </li>
+          </ul>
+      </div>
+
+      <div class="cummunity">
+          <h4>
+              Join our community
+          </h4>
+          <ul class="social">
+              <li>
+                  <a href="#">
+                      <img src="../assets/DiscordLogo.svg" alt="Discord">
+                  </a>
+              </li>
+
+              <li>
+                  <a href="#">
+                      <img src="../assets/YoutubeLogo.svg" alt="Youtube">
+                  </a>
+              </li>
+
+              <li>
+                  <a href="#">
+                      <img src="../assets/TwitterLogo.svg" alt="Twitter">
+                  </a>
+              </li>
+
+              <li>
+                  <a href="#">
+                      <img src="./assets/InstagramLogo.svg" alt="Instagram">
+                  </a>
+              </li>
+          </ul>
+      </div>
+      
+      <div class="copyright">
+          <p class="avatar-name">
+              Ⓒ NFT Market. Use this template freely.
+          </p>
+      </div>
+  </footer>
+
+  <!-- 
+      ----Link script files----
+  -->
+   <script type="module" src="./js/NFT-page.js"></script>
 </body>
-</html>
+</html> 
